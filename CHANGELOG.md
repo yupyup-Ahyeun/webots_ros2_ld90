@@ -26,3 +26,8 @@
 
 ## 2024. 06. 12. 
 - sang branch를 main branch로 가져옴
+- git 변경 --> private 하기 위해
+
+## 2024. 06. 22.
+- nav2_params.yaml 파라미터 변형본 업로드
+
