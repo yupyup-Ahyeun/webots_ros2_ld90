@@ -21,7 +21,6 @@ ros2 launch webots_ros2_ld90 robot_launch.py world:=contest.wbt
 # SLAM용 사람 없는 map에서 실행
 ros2 launch webots_ros2_ld90 robot_launch.py world:=contest_non_ped.wbt
 
-
 # SLAM용 사람 없는 + 함정 없는 map에서 실행
 ros2 launch webots_ros2_ld90 robot_launch.py world:=contest_non_ped_non_manhole.wbt
 
