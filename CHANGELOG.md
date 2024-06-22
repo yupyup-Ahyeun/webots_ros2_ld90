@@ -32,3 +32,4 @@
 - nav2_params.yaml 파라미터 변형본 업로드
 - 함정(맨홀) 없는 맵 추가
 - wbt 수정: 로봇 초기화 자세 앞을 보도록 하여 수정
+- wbt 수정: WorldInfo에서 contactProperties, slip 일어나지 않도록 수정

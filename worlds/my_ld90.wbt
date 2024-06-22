@@ -6,6 +6,12 @@ EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/project
 EXTERNPROTO "../protos/LD90.proto"
 
 WorldInfo {
+  contactProperties [
+    ContactProperties {
+      coulombFriction -1
+      bounce 0
+    }
+  ]
 }
 Viewpoint {
   orientation 0.07199263361383279 -0.10577322718557351 -0.9917807646431209 5.047428939620131
