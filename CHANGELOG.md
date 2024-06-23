@@ -34,3 +34,7 @@
 - wbt 수정: 로봇 초기화 자세 앞을 보도록 하여 수정
 - wbt 수정: WorldInfo에서 contactProperties, slip 일어나지 않도록 수정
 - LD90.urdf 수정: Lidar update Rate 5 >> 50으로 수정
+
+## 2024. 06. 23.
+- webots.cloud에서 필요한 lidar의 proto 다운로드: RpLidarA2_01.proto, RpLidarA2_02.proto
+- LD90.proto에 lidar 추가 작업 시작(미완)

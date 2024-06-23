@@ -1,0 +1,16 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/released/projects/devices/slamtec/protos/RpLidarA2.proto"
+
+PROTO RpLidarA2_02 [
+  field SFVec3f translation 0 0 0.031
+  field SFRotation rotation 0 0 1 0
+  field SFString name "RPlidar A2"
+]
+{
+  RpLidarA2 {
+    translation IS translation
+    rotation IS rotation
+    name IS name
+  }
+}
