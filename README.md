@@ -21,6 +21,9 @@ ros2 launch webots_ros2_ld90 robot_launch.py world:=contest.wbt
 # SLAM용 사람 없는 map에서 실행
 ros2 launch webots_ros2_ld90 robot_launch.py world:=contest_non_ped.wbt
 
+# SLAM용 사람 없는 + 함정 없는 map에서 실행
+ros2 launch webots_ros2_ld90 robot_launch.py world:=contest_non_ped_non_manhole.wbt
+
 ```
 
 ### ros2 command
@@ -40,7 +43,6 @@ ros2 launch webots_ros2_ld90 robot_launch.py world:=contest_non_ped.wbt
 1) ros2 run rviz2 rviz2 -d $(ros2 pkg prefix nav2_bringup)/share/nav2_bringup/rviz/nav2_default_view.rviz
 2) ros2 launch nav2_bringup bringup_launch.py params_file:=resource/nav2_params.yaml map:=my_map.yaml slam:=True
 ```
-
 ### rviz mapping
 ```
 1) ros2 run teleop_twist_keyboard teleop_twist_keyboard

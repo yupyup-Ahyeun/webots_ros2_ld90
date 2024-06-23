@@ -12,6 +12,7 @@ data_files.append(('share/' + package_name + '/protos/textures', ['protos/textur
 data_files.append(('share/' + package_name + '/worlds', ['worlds/my_ld90.wbt']))
 data_files.append(('share/' + package_name + '/worlds', ['worlds/contest.wbt']))
 data_files.append(('share/' + package_name + '/worlds', ['worlds/contest_non_ped.wbt']))
+data_files.append(('share/' + package_name + '/worlds', ['worlds/contest_non_ped_non_manhole.wbt']))
 data_files.append(('share/' + package_name + '/resource', ['resource/ros2control.yaml']))
 data_files.append(('share/' + package_name + '/resource', ['resource/LD90.urdf']))
 data_files.append(('share/' + package_name + '/launch', ['launch/robot_launch.py']))
