@@ -38,15 +38,17 @@ ros2 launch webots_ros2_ld90 robot_launch.py world:=contest_non_ped_non_manhole.
 3) ros2 topic echo /odom, ros2 topic echo /joint_states
 4) ros2 topic echo /scan
 ```
-### rviz open command 
-```
-1) ros2 run rviz2 rviz2 -d $(ros2 pkg prefix nav2_bringup)/share/nav2_bringup/rviz/nav2_default_view.rviz
-2) ros2 launch nav2_bringup bringup_launch.py params_file:=resource/nav2_params.yaml map:=my_map.yaml slam:=True
-```
-### rviz mapping
-```
-1) ros2 run teleop_twist_keyboard teleop_twist_keyboard
-2) ros2 run nav2_map_server map_saver_cli -f my_map
-... my_map.pgm 및 my_map.yaml 파일 저장 확인
-```
 
+### rviz map command
+```
+Start RVIZ) ros2 run rviz2 rviz2 -d $(ros2 pkg prefix nav2_bringup)/share/nav2_bringup/rviz/nav2_default_view.rviz
+
+Mapping using SLAM) 
+	1) ros2 launch nav2_bringup bringup_launch.py params_file:=resource/nav2_params.yaml map:=my_map.yaml slam:=True
+	2) ros2 run teleop_twist_keyboard teleop_twist_keyboard
+	3) ros2 run nav2_map_server map_saver_cli -f my_map
+... my_map.pgm 및 my_map.yaml 파일 저장 확인
+
+Use map) ros2 launch nav2_bringup bringup_launch.py params_file:=resource/nav2_params.yaml map:=resource/{map_name}.yaml 
+
+```
