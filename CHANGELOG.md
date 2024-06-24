@@ -37,4 +37,10 @@
 
 ## 2024. 06. 23.
 - webots.cloud에서 필요한 lidar의 proto 다운로드: RpLidarA2_01.proto, RpLidarA2_02.proto
-- LD90.proto에 lidar 추가 작업 시작(미완)
+- LD90.proto에 lidar 추가 작업 시작
+
+## 2024. 06. 24.
+- lidar rplidar 대신 realsense 사용 결정
+- LD90.proto 및 LD90.urdf에 realsense 적용 완료, webots상에서 Rangefinder frustums 옵션 활성화 확인 완료
+
+

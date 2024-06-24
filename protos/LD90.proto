@@ -5,7 +5,8 @@
 # Extracted from: /home/inmojang/workspace/lecture/assignment/ld90_ws/Omron_LD_ROS_Package/src/ld_visualisation/urdf/LD_90.urdf
 EXTERNPROTO "./SickLms291.proto"
 EXTERNPROTO "./LD90RearDistanceSensor.proto"
-EXTERNPROTO "./RpLidarA2_01.proto"
+# EXTERNPROTO "./RpLidarA2_01.proto"
+# EXTERNPROTO "./RpLidarA2_02.proto"
 
 PROTO LD90 [
   field  SFVec3f     translation     0 0 0
@@ -30,7 +31,7 @@ PROTO LD90 [
     synchronization IS synchronization
     selfCollision IS selfCollision
     children [
-      Pose { # Main Lidar Slot
+      Pose { # Main Lidar Slot: SickLms291
         translation 0.26 0 0.11
         rotation 1 0 0 3.141592
         children [
@@ -39,16 +40,45 @@ PROTO LD90 [
         ]
       }
 
-
-      Pose { # Sub Lidar 01
-        translation 0 0 0
-        rotation 1 0 0 0
+      Solid { # Sub Lidar 01: intel_realsense
+        translation 0.000000 0.000000 0.640000
+        rotation 0 0 0 1.570796
         children [
-          RpLidarA2_01 {
+          Pose {
+            translation 0 0 0
+            children [
+              RangeFinder {
+                name "camera_realsense_depth_01"
+                fieldOfView 1.518435
+                width 640
+                height 480
+                near 0.010000
+              }
+            ]
           }
         ]
+        name "camera_realsense_01"
       }
 
+      Solid { # Sub Lidar 02
+        translation 0.000000 0.000000 0.640000
+        rotation 0 0 0 -1.570796
+        children [
+          Pose {
+            translation 0 0 0
+            children [
+              RangeFinder {
+                name "camera_realsense_depth_02"
+                fieldOfView 1.518435
+                width 640
+                height 480
+                near 0.010000
+              }
+            ]
+          }
+        ]
+        name "camera_realsense_02"
+      }
 
 
       Pose { # CAD Shape

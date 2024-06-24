@@ -7,11 +7,32 @@
             <ros>
                 <enabled>true</enabled>
                 <updateRate>50</updateRate>
-                <topicName>/scan</topicName>
+                <topicName>/scan_main</topicName>
                 <alwaysOn>true</alwaysOn>
                 <frameName>main_lidar</frameName>
             </ros>
         </device>
+
+
+        <device reference="camera_realsense_depth_01" type="Lidar">
+            <ros>
+                <enabled>true</enabled>
+                <updateRate>5</updateRate>
+                <topicName>/scan_01</topicName>
+                <alwaysOn>true</alwaysOn>
+                <frameName>camera_realsense_01</frameName>
+            </ros>
+        </device>
+        <device reference="camera_realsense_depth_02" type="Lidar">
+            <ros>
+                <enabled>true</enabled>
+                <updateRate>5</updateRate>
+                <topicName>/scan_02</topicName>
+                <alwaysOn>true</alwaysOn>
+                <frameName>camera_realsense_02</frameName>
+            </ros>
+        </device>
+
 
         <device reference="rear_sonar_1" type="DistanceSensor">
             <ros>
