@@ -35,6 +35,7 @@ PROTO LD90 [
         rotation 1 0 0 3.141592
         children IS extensionSlotMainLIDAR
       }
+
       Pose { # CAD Shape
         rotation 0.577350 0.577350 0.577350 2.094395
         children [

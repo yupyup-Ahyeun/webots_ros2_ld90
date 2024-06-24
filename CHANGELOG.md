@@ -34,3 +34,6 @@
 - wbt 수정: 로봇 초기화 자세 앞을 보도록 하여 수정
 - wbt 수정: WorldInfo에서 contactProperties, slip 일어나지 않도록 수정
 - LD90.urdf 수정: Lidar update Rate 5 >> 50으로 수정
+
+#2024. 06.24.
+- mapping done  

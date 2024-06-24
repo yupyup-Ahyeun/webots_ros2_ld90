@@ -1,4 +1,4 @@
-image: my_map2.pgm
+image: my_mapff.pgm
 mode: trinary
 resolution: 0.05
 origin: [-2.12, -12.8, 0]
