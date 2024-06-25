@@ -33,6 +33,16 @@
             </ros>
         </device>
 
+        <device reference="oakd_rgb_camera" type="Camera">
+            <ros>
+                <enabled>true</enabled>
+                <updateRate>5</updateRate>
+                <topicName>/scan_camera</topicName>
+                <alwaysOn>true</alwaysOn>
+                <frameName>oakd_camera</frameName>
+            </ros>
+        </device>
+
 
         <device reference="rear_sonar_1" type="DistanceSensor">
             <ros>

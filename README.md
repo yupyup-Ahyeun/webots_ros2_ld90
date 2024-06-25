@@ -56,5 +56,5 @@ Mapping using SLAM)
 Use map) 
 ros2 launch nav2_bringup bringup_launch.py params_file:=resource/nav2_params.yaml map:=resource/my_mapff.yaml
 ros2 launch nav2_bringup bringup_launch.py params_file:=resource/nav2_params.yaml map:=resource/refined_map.yaml
-ros2 launch nav2_bringup bringup_launch.py params_file:=resource/nav2_params.yaml map:=resource/refined_map_filtered.yaml # issue 존재
+ros2 launch nav2_bringup bringup_launch.py params_file:=resource/nav2_params.yaml map:=resource/refined_map_filtered.yaml
 ```
