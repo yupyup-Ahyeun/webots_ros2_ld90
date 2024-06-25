@@ -84,13 +84,13 @@ PROTO LD90 [
         translation 0.118000 0.000000 0.292570
         children [
           DEF camera_bracket_visual CadShape {
-            url "/home/sang/webots_ros2_ld90/install/webots_ros2_ld90/share/webots_ros2_ld90/protos/meshes/camera_bracket.dae"
+            url "./meshes/camera_bracket.dae"
           }
           Solid {
             translation 0.058400 0.000000 0.096760
             children [
               DEF oakd_pro_visual CadShape {
-                url "/home/sang/webots_ros2_ld90/install/webots_ros2_ld90/share/webots_ros2_ld90/protos/meshes/oakd_pro.dae"
+                url "./meshes/oakd_pro.dae"
               }
               Camera { # RGB Camera
                 children [
