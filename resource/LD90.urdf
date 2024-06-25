@@ -8,12 +8,12 @@
             <ros>
                 <enabled>true</enabled>
                 <updateRate>5</updateRate>
-                <topicName>/scan</topicName>
+                <topicName>/scan_main</topicName>
                 <alwaysOn>true</alwaysOn>
                 <frameName>main_lidar</frameName>
             </ros>
-
         </device>
+
         <device reference="camera_realsense_depth_01" type="Lidar">
             <ros>
                 <enabled>true</enabled>
@@ -70,17 +70,6 @@
                 <frameName>rear_sonar_4</frameName>
             </ros>
         </device>
-         <device reference="oakd_rgb_camera" type="Camera">
-            <ros>
-                <enabled>true</enabled>
-                <updateRate>30</updateRate>
-                <topicName>/oakd_rgb_camera/image_raw</topicName>
-                <alwaysOn>true</alwaysOn>
-                <frameName>oakd_rgb_camera_frame</frameName>
-            </ros>
-        </device>
-
-
     </webots>
 
     <ros2_control name="WebotsControl" type="system">
@@ -95,31 +84,6 @@
             <state_interface name="position"/>
             <command_interface name="velocity"/>            
         </joint>        
-    </ros2_control>
-
-
-    <link name="oakd_rgb_camera_link">
-        <inertial>
-            <origin xyz="0 0 0" rpy="0 0 0"/>
-            <mass value="0.010"/>
-            <inertia ixx="1.666667e-07" ixy="0.0" ixz="0.0" iyy="1.666667e-07" iyz="0.0" izz="1.666667e-07"/>
-        </inertial>
-        <visual>
-            <geometry>
-                <box size="0.05 0.05 0.05"/>
-            </geometry>
-        </visual>
-        <collision>
-            <geometry>
-                <box size="0.05 0.05 0.05"/>
-            </geometry>
-        </collision>
-    </link>
-
-    <joint name="oakd_rgb_camera_joint" type="fixed">
-        <parent link="base_link"/>
-        <child link="oakd_rgb_camera_link"/>
-        <origin xyz="0.058400 0.000000 0.096760" rpy="-0.577350 0.577350 -0.577350"/>
-    </joint>
+    </ros2_control>        
     
 </robot>

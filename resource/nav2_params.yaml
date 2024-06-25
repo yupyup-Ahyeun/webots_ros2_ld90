@@ -38,7 +38,7 @@ amcl:
     z_max: 0.05
     z_rand: 0.5
     z_short: 0.05
-    scan_topic: scan
+    scan_topic: /scan_main
 
 map_server:
   ros__parameters:
@@ -61,7 +61,7 @@ bt_navigator:
     use_sim_time: True
     global_frame: map
     robot_base_frame: base_link
-    odom_topic: odom
+    odom_topic: /odom
     bt_loop_duration: 10
     default_server_timeout: 20
     # 'default_nav_through_poses_bt_xml' and 'default_nav_to_pose_bt_xml' are use defaults:
@@ -199,7 +199,7 @@ local_costmap:
     ros__parameters:
       update_frequency: 5.0
       publish_frequency: 2.0
-      global_frame: map
+      global_frame: odom
       robot_base_frame: base_link
       use_sim_time: True
       rolling_window: true
@@ -211,7 +211,7 @@ local_costmap:
       inflation_layer:
         plugin: "nav2_costmap_2d::InflationLayer"
         cost_scaling_factor: 4.0
-        inflation_radius: 0.7
+        inflation_radius: 0.45
       voxel_layer:
         plugin: "nav2_costmap_2d::VoxelLayer"
         enabled: True
@@ -221,10 +221,9 @@ local_costmap:
         z_voxels: 16
         max_obstacle_height: 2.0
         mark_threshold: 0
-        observation_sources: main_lidar_scan sub_lidar_01_scan sub_lidar_02_scan
-        main_lidar_scan:
-          topic: /scan
-          sensor_frame: main_lidar
+        observation_sources: scan_main scan_01 scan_02
+        scan_main:
+          topic: /scan_main
           max_obstacle_height: 2.0
           clearing: True
           marking: True
@@ -233,9 +232,8 @@ local_costmap:
           raytrace_min_range: 0.0
           obstacle_max_range: 2.5
           obstacle_min_range: 0.0
-        sub_lidar_01_scan:
-          topic: /scan_01
-          sensor_frame: sub_lidar_01
+        scan_01:
+          topic: /scan_01/point_cloud
           max_obstacle_height: 2.0
           clearing: True
           marking: True
@@ -244,9 +242,8 @@ local_costmap:
           raytrace_min_range: 0.0
           obstacle_max_range: 2.5
           obstacle_min_range: 0.0
-        sub_lidar_02_scan:
-          topic: /scan_02
-          sensor_frame: sub_lidar_02
+        scan_main:
+          topic: /scan_02/point_cloud
           max_obstacle_height: 2.0
           clearing: True
           marking: True
@@ -258,7 +255,6 @@ local_costmap:
       static_layer:
         plugin: "nav2_costmap_2d::StaticLayer"
         map_subscribe_transient_local: True
-        map_topic: /map
       always_send_full_costmap: True
 
 global_costmap:
@@ -276,10 +272,9 @@ global_costmap:
       obstacle_layer:
         plugin: "nav2_costmap_2d::ObstacleLayer"
         enabled: True
-        observation_sources: scan
-        scan:
-          topic: /scan
-          sensor_frame: main_lidar
+        observation_sources: scan_main
+        scan_main:
+          topic: /scan_main
           max_obstacle_height: 2.0
           clearing: True
           marking: True
@@ -291,11 +286,10 @@ global_costmap:
       static_layer:
         plugin: "nav2_costmap_2d::StaticLayer"
         map_subscribe_transient_local: True
-        map_topic: /map
       inflation_layer:
         plugin: "nav2_costmap_2d::InflationLayer"
         cost_scaling_factor: 4.0
-        inflation_radius: 0.7
+        inflation_radius: 0.45
       always_send_full_costmap: True
 
 planner_server:
@@ -390,7 +384,7 @@ slam_toolbox:
     odom_frame: odom
     map_frame: map
     base_frame: base_link
-    scan_topic: scan
+    scan_topic: scan_main
     mode: mapping
 
     debug_logging: false

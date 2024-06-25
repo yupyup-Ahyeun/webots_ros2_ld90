@@ -43,4 +43,6 @@
 - robot_launch.py, LD90.urdf 수정: ros2 topic list 등으로 scan_01 등 확인 가능하도록 셋팅 완료
 
 ##2024.0.26
-- oakd_camera installed (proto + urdf modified) 
+- oakd_camera installed (proto + urdf modified)
+- map branch에서 camera branch로 이동
+
