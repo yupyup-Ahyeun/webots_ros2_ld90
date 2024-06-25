@@ -43,3 +43,7 @@
 - robot_launch.py, LD90.urdf 수정: ros2 topic list 등으로 scan_01 등 확인 가능하도록 셋팅 완료
 - refined_map과 refined_map_filtered의 pgm과 yaml 추가
 
+## 2024. 06. 26.
+- nav2_params.yaml 수정: source명 일치 및 복수 source 정의 ... local obstacle avoidance 구현 완료
+
+
