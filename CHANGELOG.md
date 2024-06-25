@@ -41,3 +41,5 @@
 
 ## 2024. 06. 25.
 - robot_launch.py, LD90.urdf 수정: ros2 topic list 등으로 scan_01 등 확인 가능하도록 셋팅 완료
+- refined_map과 refined_map_filtered의 pgm과 yaml 추가
+
