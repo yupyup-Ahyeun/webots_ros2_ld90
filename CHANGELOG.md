@@ -26,3 +26,21 @@
 
 ## 2024. 06. 12. 
 - sang branch를 main branch로 가져옴
+- git 변경 --> private 하기 위해
+
+## 2024. 06. 22.
+- nav2_params.yaml 파라미터 변형본 업로드
+- 함정(맨홀) 없는 맵 추가
+- wbt 수정: 로봇 초기화 자세 앞을 보도록 하여 수정
+- wbt 수정: WorldInfo에서 contactProperties, slip 일어나지 않도록 수정
+- LD90.urdf 수정: Lidar update Rate 5 >> 50으로 수정
+
+#2024. 06.24.
+- mapping done  
+
+
+## 2024. 06. 25.
+- robot_launch.py, LD90.urdf 수정: ros2 topic list 등으로 scan_01 등 확인 가능하도록 셋팅 완료
+
+##2024.0.26
+- oakd_camera installed (proto + urdf modified) 

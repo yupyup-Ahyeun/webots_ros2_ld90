@@ -5,6 +5,8 @@
 # Extracted from: /home/inmojang/workspace/lecture/assignment/ld90_ws/Omron_LD_ROS_Package/src/ld_visualisation/urdf/LD_90.urdf
 EXTERNPROTO "./SickLms291.proto"
 EXTERNPROTO "./LD90RearDistanceSensor.proto"
+# EXTERNPROTO "./RpLidarA2_01.proto"
+# EXTERNPROTO "./RpLidarA2_02.proto"
 
 PROTO LD90 [
   field  SFVec3f     translation     0 0 0
@@ -16,7 +18,6 @@ PROTO LD90 [
   field  SFBool      supervisor      FALSE         # Is `Robot.supervisor`.
   field  SFBool      synchronization TRUE          # Is `Robot.synchronization`.
   field  SFBool      selfCollision   FALSE         # Is `Robot.selfCollision`.
-  field  MFNode      extensionSlotMainLIDAR   [ SickLms291 { } ]  # Extends the robot with new nodes in the extension slot.  
 ]
 {
   Robot {
@@ -30,11 +31,208 @@ PROTO LD90 [
     synchronization IS synchronization
     selfCollision IS selfCollision
     children [
-      Pose { # Main Lidar Slot
+      Pose { # Main Lidar Slot: SickLms291
         translation 0.26 0 0.11
         rotation 1 0 0 3.141592
-        children IS extensionSlotMainLIDAR
+        children [
+          SickLms291 {
+          }
+        ]
       }
+
+      Solid { # Sub Lidar 01: intel_realsense
+        translation 0.000000 0.000000 0.640000
+        rotation 0 0 0 1.570796
+        children [
+          Pose {
+            translation 0 0 0
+            children [
+              RangeFinder {
+                name "camera_realsense_depth_01"
+                fieldOfView 1.047
+                width 640
+                height 480
+                near 0.010000
+              }
+            ]
+          }
+        ]
+        name "camera_realsense_01"
+      }
+
+      Solid { # Sub Lidar 02
+        translation 0.000000 0.000000 0.640000
+        rotation 0 0 0 -1.570796
+        children [
+          Pose {
+            translation 0 0 0
+            children [
+              RangeFinder {
+                name "camera_realsense_depth_02"
+                fieldOfView 1.047
+                width 640
+                height 480
+                near 0.010000
+              }
+            ]
+          }
+        ]
+        name "camera_realsense_02"
+      }
+
+      Solid {
+        translation 0.118000 0.000000 0.292570
+        children [
+          DEF camera_bracket_visual CadShape {
+            url "/home/sang/webots_ros2_ld90/install/webots_ros2_ld90/share/webots_ros2_ld90/protos/meshes/camera_bracket.dae"
+          }
+          Solid {
+            translation 0.058400 0.000000 0.096760
+            children [
+              DEF oakd_pro_visual CadShape {
+                url "/home/sang/webots_ros2_ld90/install/webots_ros2_ld90/share/webots_ros2_ld90/protos/meshes/oakd_pro.dae"
+              }
+              Camera { # RGB Camera
+                children [
+                  Solid {
+                    rotation -0.577350 0.577350 -0.577350 2.094395
+                    name "oakd_rgb_camera_optical_frame"
+                    physics Physics {
+                      density -1
+                      mass 0.010000
+                      centerOfMass [ 0.000000 0.000000 0.000000 ]
+                      inertiaMatrix [
+                        1.666667e-07 1.666667e-07 1.666667e-07
+                        0.000000e+00 0.000000e+00 0.000000e+00
+                      ]
+                    }
+                  }
+                ]
+                name "oakd_rgb_camera" # RGB Camera
+                width 1280
+                height 800
+                fieldOfView 1.047
+                physics Physics {
+                  density -1
+                  mass 0.010000
+                  centerOfMass [ 0.000000 0.000000 0.000000 ]
+                  inertiaMatrix [
+                    1.666667e-07 1.666667e-07 1.666667e-07
+                    0.000000e+00 0.000000e+00 0.000000e+00
+                  ]
+                }
+              }
+              RangeFinder { # Stereo Camera
+                name "oakd_stereo_camera"
+                width 1280
+                height 800
+                fieldOfView 1.047
+                minRange 0.01
+                maxRange 12.0
+                near 0.01
+              }
+              Solid {
+                translation 0.000000 0.037500 0.000000
+                children [
+                  Solid {
+                    rotation -0.577350 0.577350 -0.577350 2.094395
+                    name "oakd_left_camera_optical_frame"
+                    physics Physics {
+                      density -1
+                      mass 0.010000
+                      centerOfMass [ 0.000000 0.000000 0.000000 ]
+                      inertiaMatrix [
+                        1.666667e-07 1.666667e-07 1.666667e-07
+                        0.000000e+00 0.000000e+00 0.000000e+00
+                      ]
+                    }
+                  }
+                ]
+                name "oakd_left_camera_frame"
+                physics Physics {
+                  density -1
+                  mass 0.010000
+                  centerOfMass [ 0.000000 0.000000 0.000000 ]
+                  inertiaMatrix [
+                    1.666667e-07 1.666667e-07 1.666667e-07
+                    0.000000e+00 0.000000e+00 0.000000e+00
+                  ]
+                }
+              }
+              Solid {
+                translation 0.000000 -0.037500 0.000000
+                children [
+                  Solid {
+                    rotation -0.577350 0.577350 -0.577350 2.094395
+                    name "oakd_right_camera_optical_frame"
+                    physics Physics {
+                      density -1
+                      mass 0.010000
+                      centerOfMass [ 0.000000 0.000000 0.000000 ]
+                      inertiaMatrix [
+                        1.666667e-07 1.666667e-07 1.666667e-07
+                        0.000000e+00 0.000000e+00 0.000000e+00
+                      ]
+                    }
+                  }
+                ]
+                name "oakd_right_camera_frame"
+                physics Physics {
+                  density -1
+                  mass 0.010000
+                  centerOfMass [ 0.000000 0.000000 0.000000 ]
+                  inertiaMatrix [
+                    1.666667e-07 1.666667e-07 1.666667e-07
+                    0.000000e+00 0.000000e+00 0.000000e+00
+                  ]
+                }
+              }
+              Solid {
+                rotation -0.577350 0.577350 -0.577350 2.094395
+                name "oakd_imu_frame"
+                physics Physics {
+                  density -1
+                  mass 0.010000
+                  centerOfMass [ 0.000000 0.000000 0.000000 ]
+                  inertiaMatrix [
+                    1.666667e-07 1.666667e-07 1.666667e-07
+                    0.000000e+00 0.000000e+00 0.000000e+00
+                  ]
+                }
+              }
+            ]
+            name "oakd_link"
+            boundingObject Pose {
+              translation -0.011000 0.000000 -0.005000
+              children [
+                Box {
+                  size 0.022500 0.097000 0.030000
+                }
+              ]
+            }
+            physics Physics {
+              density -1
+              mass 0.061000
+              centerOfMass [ 0.000000 0.000000 0.000000 ]
+              inertiaMatrix [
+                2.024750e-06 1.527320e-05 1.605536e-05
+                0.000000e+00 0.000000e+00 0.000000e+00
+              ]
+            }
+          }
+        ]
+        name "oakd_camera_bracket"
+        physics Physics {
+          density -1
+          mass 0.033000
+          centerOfMass [ 0.000000 0.000000 0.000000 ]
+          inertiaMatrix [
+            5.791810e-05 5.597850e-05 1.409550e-05
+            0.000000e+00 9.067900e-06 0.000000e+00
+          ]
+        }
+      }
+
       Pose { # CAD Shape
         rotation 0.577350 0.577350 0.577350 2.094395
         children [
@@ -51,6 +249,7 @@ PROTO LD90 [
           }
         ]
       }
+
       SliderJoint { # Wheel - Left
         jointParameters JointParameters {
           axis 0.000000 0.000000 -1.000000
@@ -126,7 +325,8 @@ PROTO LD90 [
             ]
           }
         }
-      }      
+      }
+
       SliderJoint { # Wheel - Right
         jointParameters JointParameters {
           axis 0.000000 0.000000 -1.000000
@@ -143,7 +343,7 @@ PROTO LD90 [
             name "wheel_drop_right_joint_sensor"
           }
         ]
-        endPoint Solid {          
+        endPoint Solid {
           translation 0.000000 -0.196425 0.000881
           rotation -1.000000 0.000000 0.000000 1.570796
           children [
@@ -198,7 +398,7 @@ PROTO LD90 [
             ]
           }
         }
-      }   
+      }
 
       DEF Caster1 BallJoint { # Caster - Right Front
         jointParameters BallJointParameters {
@@ -227,6 +427,7 @@ PROTO LD90 [
           }
         }
       }
+
       DEF Caster2 BallJoint { # Caster - Left Front
         jointParameters BallJointParameters {
           anchor 0.209000 0.108000 -0.049000
@@ -254,6 +455,7 @@ PROTO LD90 [
           }
         }
       }
+
       DEF Caster3 BallJoint { # Caster - Left Rear
         jointParameters BallJointParameters {
           anchor -0.228000 0.156000 -0.049000
@@ -281,6 +483,7 @@ PROTO LD90 [
           }
         }
       }
+
       DEF Caster4 BallJoint { # Caster - Right Rear
         jointParameters BallJointParameters {
           anchor -0.228000 -0.156000 -0.049000
@@ -328,7 +531,7 @@ PROTO LD90 [
         translation -0.354000 -0.0870 0.270
         rotation 0.0000 0.0000 1.0000 3.141592 
         name "rear_sonar_4"
-      }                  
+      }
     ]
     boundingObject Group {
       children [
@@ -336,7 +539,7 @@ PROTO LD90 [
           translation 0.000000 0.000000 0.125
           children [
             Box {
-               size 0.699 0.500 0.333
+              size 0.699 0.500 0.333
             }
           ]
         }
@@ -350,6 +553,6 @@ PROTO LD90 [
         4.260000e-01 4.960000e-01 9.100000e-01
         0.000000e+00 0.000000e+00 0.000000e+00
       ]
-    }    
+    }
   }
 }
