@@ -45,5 +45,6 @@
 
 ## 2024. 06. 26.
 - nav2_params.yaml 수정: source명 일치 및 복수 source 정의 ... local obstacle avoidance 구현 완료
+- refined_map_filtered.pgm 필터 부분 수정
 
 

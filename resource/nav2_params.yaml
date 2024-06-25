@@ -233,7 +233,7 @@ local_costmap:
           obstacle_max_range: 2.5
           obstacle_min_range: 0.0
         scan_01:
-          topic: /scan_01
+          topic: /scan_01/point_cloud
           max_obstacle_height: 2.0
           clearing: True
           marking: True
@@ -243,7 +243,7 @@ local_costmap:
           obstacle_max_range: 2.5
           obstacle_min_range: 0.0
         scan_main:
-          topic: /scan_02
+          topic: /scan_02/point_cloud
           max_obstacle_height: 2.0
           clearing: True
           marking: True
