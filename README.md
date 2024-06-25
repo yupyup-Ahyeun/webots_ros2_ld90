@@ -53,6 +53,8 @@ Mapping using SLAM)
 	3) ros2 run nav2_map_server map_saver_cli -f my_map
 ... my_map.pgm 및 my_map.yaml 파일 저장 확인
 
-Use map) ros2 launch nav2_bringup bringup_launch.py params_file:=resource/nav2_params.yaml map:=resource/my_mapff.yaml
-
+Use map) 
+ros2 launch nav2_bringup bringup_launch.py params_file:=resource/nav2_params.yaml map:=resource/my_mapff.yaml
+ros2 launch nav2_bringup bringup_launch.py params_file:=resource/nav2_params.yaml map:=resource/refined_map.yaml
+ros2 launch nav2_bringup bringup_launch.py params_file:=resource/nav2_params.yaml map:=resource/refined_map_filtered.yaml
 ```
