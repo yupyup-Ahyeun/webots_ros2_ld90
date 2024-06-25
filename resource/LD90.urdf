@@ -1,5 +1,6 @@
 <?xml version="1.0" ?>
 <robot name="LD90">
+
     <webots>
         <plugin type="webots_ros2_control::Ros2Control"/>
 
@@ -7,7 +8,7 @@
             <ros>
                 <enabled>true</enabled>
                 <updateRate>5</updateRate>
-                <topicName>/scan</topicName>
+                <topicName>/scan_main</topicName>
                 <alwaysOn>true</alwaysOn>
                 <frameName>main_lidar</frameName>
             </ros>
@@ -69,9 +70,7 @@
                 <frameName>rear_sonar_4</frameName>
             </ros>
         </device>
-
     </webots>
-
 
     <ros2_control name="WebotsControl" type="system">
         <hardware>
@@ -86,4 +85,5 @@
             <command_interface name="velocity"/>            
         </joint>        
     </ros2_control>        
+    
 </robot>

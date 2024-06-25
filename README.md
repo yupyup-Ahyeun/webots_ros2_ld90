@@ -11,6 +11,10 @@
 ```
 colcon build
 source install/local_setup.bash
+```
+
+### webot command
+```
 
 # 빈 map에서 실행
 ros2 launch webots_ros2_ld90 robot_launch.py

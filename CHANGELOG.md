@@ -37,3 +37,7 @@
 
 #2024. 06.24.
 - mapping done  
+
+
+## 2024. 06. 25.
+- robot_launch.py, LD90.urdf 수정: ros2 topic list 등으로 scan_01 등 확인 가능하도록 셋팅 완료

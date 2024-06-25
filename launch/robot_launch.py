@@ -71,7 +71,9 @@ def generate_launch_description():
     mappings = [
         ('/diffdrive_controller/cmd_vel_unstamped', '/cmd_vel'), 
         ('/diffdrive_controller/odom', '/odom'),
-        ('/LD90/main_lidar', '/scan')
+        ('/LD90/main_lidar', '/scan_main'),
+        ('/LD90/camera_realsense_depth_01', '/scan_01'),
+        ('/LD90/camera_realsense_depth_02', '/scan_02'),
     ]      
     
     # Create a ROS node interacting with the simulated robot
