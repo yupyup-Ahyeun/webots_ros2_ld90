@@ -8,7 +8,7 @@
             <ros>
                 <enabled>true</enabled>
                 <updateRate>5</updateRate>
-                <topicName>/scan_main</topicName>
+                <topicName>/scan</topicName>
                 <alwaysOn>true</alwaysOn>
                 <frameName>main_lidar</frameName>
             </ros>
@@ -20,7 +20,7 @@
                 <updateRate>5</updateRate>
                 <topicName>/scan_01</topicName>
                 <alwaysOn>true</alwaysOn>
-                <frameName>camera_realsense_01</frameName>
+                <frameName>sub_lidar_01</frameName>
             </ros>
         </device>
         <device reference="camera_realsense_depth_02" type="Lidar">
@@ -29,7 +29,7 @@
                 <updateRate>5</updateRate>
                 <topicName>/scan_02</topicName>
                 <alwaysOn>true</alwaysOn>
-                <frameName>camera_realsense_02</frameName>
+                <frameName>sub_lidar_02</frameName>
             </ros>
         </device>
 
