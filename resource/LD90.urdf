@@ -8,7 +8,7 @@
             <ros>
                 <enabled>true</enabled>
                 <updateRate>5</updateRate>
-                <topicName>/scan</topicName>
+                <topicName>/scan_main</topicName>
                 <alwaysOn>true</alwaysOn>
                 <frameName>main_lidar</frameName>
             </ros>
