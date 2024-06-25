@@ -8,25 +8,16 @@ EXTERNPROTO "../protos/LD90.proto"
 WorldInfo {
 }
 Viewpoint {
-  orientation 0.07199263361383279 -0.10577322718557351 -0.9917807646431209 5.047428939620131
-  position -2.3491248615570965 -3.7045330916545605 0.722041363007577
+  orientation -0.041419939698371044 0.9885546673965846 0.14506570292047438 0.5623578135584371
+  position -4.919555794179293 -0.6014004415011478 3.391147880518909
+}
+LD90 {
+  translation 0 0 0.09
 }
 TexturedBackground {
 }
 TexturedBackgroundLight {
 }
 RectangleArena {
-  floorSize 10 10
-  wallHeight 1
-}
-LD90 {
-  hidden position_0_0 -1.4206165140059494e-05
-  hidden position_0_1 -1.42061574554124e-05
-  hidden translation_2 0 0.196425 0.0008952061651400595
-  hidden position_2_0 64.37795044055821
-  hidden rotation_3 0 0 1 1.546097368762344
-  hidden translation_4 0 -0.196425 0.0008952061574554124
-  hidden position_4_0 64.37795044055534
-  hidden rotation_5 0 0 1 1.5460973687594735
-  translation 0 0 0.0857718
+  floorSize 3 3
 }
