@@ -13,14 +13,11 @@ from launch.actions import DeclareLaunchArgument
 def generate_launch_description():
     package_dir = get_package_share_directory('webots_ros2_ld90')
     
-
     # Start a Webots simulation instance
-    
     world = LaunchConfiguration('world')
     use_sim_time = LaunchConfiguration('use_sim_time', default=True)
     
     webots = WebotsLauncher(
-        # world=os.path.join(package_dir, 'worlds', 'my_ld90.wbt')
         world=PathJoinSubstitution([package_dir, 'worlds', world]),
         ros2_supervisor=True
     )
@@ -34,7 +31,8 @@ def generate_launch_description():
             'robot_description': '<robot name=""><link name=""/></robot>'
         }],
     )
-    # wheel_drop_left and right
+
+    # Wheel drop left and right
     tf_wheel_drop_left = Node(
         package='tf2_ros',
         executable='static_transform_publisher',
@@ -60,44 +58,50 @@ def generate_launch_description():
         output='screen',
         arguments=['joint_state_broadcaster'] + controller_manager_timeout,
     )
+
     diffdrive_controller_spawner = Node(
         package='controller_manager',
         executable='spawner',
         output='screen',
         arguments=['diffdrive_controller'] + controller_manager_timeout,
-    )    
+    )
+    
     ros_control_spawners = [joint_state_broadcaster_spawner, diffdrive_controller_spawner]
+    
     mappings = [
         ('/diffdrive_controller/cmd_vel_unstamped', '/cmd_vel'), 
         ('/diffdrive_controller/odom', '/odom'),
-        ('/LD90/main_lidar', '/scan')
-        ]      
+        ('/LD90/main_lidar', '/scan_main'),
+        ('/LD90/camera_realsense_depth_01', '/scan_01'),
+        ('/LD90/camera_realsense_depth_02', '/scan_02'),
+    ]      
     
     # Create a ROS node interacting with the simulated robot
     robot_description_path = os.path.join(package_dir, 'resource', 'LD90.urdf')
     robot_driver = WebotsController(
         robot_name='LD90',
-       parameters=[
-           {'robot_description': robot_description_path,
-           'use_sim_time': use_sim_time,
-           'set_robot_state_publisher': True
-           },
-           ros2_control_params
-       ],
-       remappings=mappings
+        parameters=[
+            {
+                'robot_description': robot_description_path,
+                'use_sim_time': use_sim_time,
+                'set_robot_state_publisher': True
+            },
+            ros2_control_params
+        ],
+        remappings=mappings
     )
 
     # Wait for the simulation to be ready to start navigation nodes
     waiting_nodes = WaitForControllerConnection(
         target_driver=robot_driver,
-        nodes_to_start= ros_control_spawners
+        nodes_to_start=ros_control_spawners
     )   
 
     return LaunchDescription([
         DeclareLaunchArgument(
             'world',
             default_value='my_ld90.wbt',
-            description='Choose one of the world files from `/webots_ros2_ld90/worlds` directory'
+            description='Choose one of the world files from /webots_ros2_ld90/worlds directory'
         ),
         webots,
         robot_state_publisher,

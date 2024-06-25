@@ -199,7 +199,7 @@ local_costmap:
     ros__parameters:
       update_frequency: 5.0
       publish_frequency: 2.0
-      global_frame: odom
+      global_frame: map
       robot_base_frame: base_link
       use_sim_time: True
       rolling_window: true
@@ -211,7 +211,7 @@ local_costmap:
       inflation_layer:
         plugin: "nav2_costmap_2d::InflationLayer"
         cost_scaling_factor: 4.0
-        inflation_radius: 0.45
+        inflation_radius: 0.7
       voxel_layer:
         plugin: "nav2_costmap_2d::VoxelLayer"
         enabled: True
@@ -221,9 +221,32 @@ local_costmap:
         z_voxels: 16
         max_obstacle_height: 2.0
         mark_threshold: 0
-        observation_sources: scan
-        scan:
-          topic: scan
+        observation_sources: main_lidar_scan sub_lidar_01_scan sub_lidar_02_scan
+        main_lidar_scan:
+          topic: /scan
+          sensor_frame: main_lidar
+          max_obstacle_height: 2.0
+          clearing: True
+          marking: True
+          data_type: "LaserScan"
+          raytrace_max_range: 3.0
+          raytrace_min_range: 0.0
+          obstacle_max_range: 2.5
+          obstacle_min_range: 0.0
+        sub_lidar_01_scan:
+          topic: /scan_01
+          sensor_frame: sub_lidar_01
+          max_obstacle_height: 2.0
+          clearing: True
+          marking: True
+          data_type: "LaserScan"
+          raytrace_max_range: 3.0
+          raytrace_min_range: 0.0
+          obstacle_max_range: 2.5
+          obstacle_min_range: 0.0
+        sub_lidar_02_scan:
+          topic: /scan_02
+          sensor_frame: sub_lidar_02
           max_obstacle_height: 2.0
           clearing: True
           marking: True
@@ -235,6 +258,7 @@ local_costmap:
       static_layer:
         plugin: "nav2_costmap_2d::StaticLayer"
         map_subscribe_transient_local: True
+        map_topic: /map
       always_send_full_costmap: True
 
 global_costmap:
@@ -254,7 +278,8 @@ global_costmap:
         enabled: True
         observation_sources: scan
         scan:
-          topic: scan
+          topic: /scan
+          sensor_frame: main_lidar
           max_obstacle_height: 2.0
           clearing: True
           marking: True
@@ -266,10 +291,11 @@ global_costmap:
       static_layer:
         plugin: "nav2_costmap_2d::StaticLayer"
         map_subscribe_transient_local: True
+        map_topic: /map
       inflation_layer:
         plugin: "nav2_costmap_2d::InflationLayer"
         cost_scaling_factor: 4.0
-        inflation_radius: 0.45
+        inflation_radius: 0.7
       always_send_full_costmap: True
 
 planner_server:
@@ -380,7 +406,7 @@ slam_toolbox:
     enable_interactive_mode: true
 
     # General Parameters
-    use_scan_matching: true
+    use_scan_matching: False
     use_scan_barycenter: true
     minimum_travel_distance: 0.0
     minimum_travel_heading: 0.0
@@ -406,12 +432,12 @@ slam_toolbox:
     loop_search_space_smear_deviation: 0.03
 
     # Scan Matcher Parameters
-    distance_variance_penalty: 0.5
-    angle_variance_penalty: 1.0
+    distance_variance_penalty: 0.0002
+    angle_variance_penalty: 0.0003
 
-    fine_search_angle_offset: 0.00349
-    coarse_search_angle_offset: 0.349
-    coarse_angle_resolution: 0.0349
-    minimum_angle_penalty: 0.9
-    minimum_distance_penalty: 0.5
-    use_response_expansion: true
+    fine_search_angle_offset: 0.00002
+    coarse_search_angle_offset: 0.001
+    coarse_angle_resolution: 0.001
+    minimum_angle_penalty: 0.00015
+    minimum_distance_penalty: 0.00002
+    use_response_expansion: True

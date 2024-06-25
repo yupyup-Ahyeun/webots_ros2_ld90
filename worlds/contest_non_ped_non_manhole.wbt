@@ -1,0 +1,2725 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/school_furniture/protos/Clock.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/panels/protos/Panel.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/cabinet/protos/Cabinet.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/GlossyPaint.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/kitchen/components/protos/Sink.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/factory/conveyors/protos/ConveyorBelt.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/CorrugatedMetal.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/factory/containers/protos/PlasticCrate.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/tables/protos/Table.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/BrushedAluminium.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/chairs/protos/WoodenChair.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/computers/protos/Monitor.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/computers/protos/Keyboard.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/computers/protos/DesktopComputer.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/computers/protos/ComputerMouse.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/telephone/protos/OfficeTelephone.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/factory/tools/protos/Wrench.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/factory/tools/protos/Hammer.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/factory/tools/protos/PlatformCart.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/factory/valves/protos/LeverValve.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/apartment_structure/protos/Radiator.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/factory/pallet/protos/WoodenPalletStack.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/factory/containers/protos/CardboardBox.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/ThreadMetalPlate.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/solids/protos/SolidBox.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/GalvanizedMetal.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/factory/fire_extinguisher/protos/FireExtinguisher.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/factory/pipes/protos/TJoint.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/factory/pipes/protos/LJoint.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/apartment_structure/protos/Door.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/apartment_structure/protos/DoorKnob.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/hospital/protos/EmergencyExitSign.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/street_furniture/protos/ElectricalCabinet.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/RoughPolymer.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/obstacles/protos/OilBarrel.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/panels/protos/PanelWithTubes.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/plants/protos/PottedTree.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/living_room_furniture/protos/Sofa.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/lights/protos/FloorLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/tables/protos/RoundTable.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/traffic/protos/TrafficCone.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/traffic/protos/WorkBarrier.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/stairs/protos/StraightStairs.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/stairs/protos/StraightStairsRail.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/Rubber.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/toys/protos/RubberDuck.proto"
+EXTERNPROTO "../protos/LD90.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/advertising_board/protos/AdvertisingBoard.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/chairs/protos/OfficeChair.proto"
+
+WorldInfo {
+  info [
+    "This simulation enables to move around a MiR100 moving in an industrial environment using the keyboard"
+  ]
+  title "Simulation of Mobile Industrial Robotics' MiR100 robot"
+  contactProperties [
+    ContactProperties {
+      material1 "wheel"
+      softCFM 0.0001
+    }
+    ContactProperties {
+      material1 "slope"
+      coulombFriction [
+        0.5
+      ]
+    }
+  ]
+}
+Viewpoint {
+  orientation 0.1979921875769723 -0.8307207584641729 -0.5202904142065218 4.876379541909524
+  position 44.09592376075712 -7.4998810754739464 11.563556829398363
+  exposure 1.7
+}
+LD90 {
+  translation 47.9968 0.0394022 0.085729
+  rotation 0 0 1 3.1454
+}
+TexturedBackground {
+  texture "factory"
+}
+Clock {
+  translation 0 -6.489 1.8
+  rotation 0 0 1 1.5708
+}
+Panel {
+  translation -9.49612 6.47029 0.0051231
+  rotation 0 0 1 -1.5707953071795862
+  size 0.05 1.6 1.7
+}
+Panel {
+  translation -7.9 6.47029 0.0051231
+  rotation 0 0 1 -1.5707953071795862
+  name "panel_1"
+  size 0.05 1.6 1.7
+}
+Panel {
+  translation -9.47 4.85 0
+  name "panel_2"
+  size 0.05 1.6 1.7
+}
+Panel {
+  translation -9.47 3.25 0
+  name "panel(3)"
+  size 0.05 1.6 1.7
+}
+Panel {
+  translation -9.47 1.63 0
+  name "panel(1)"
+  size 0.05 1.6 1.7
+}
+Panel {
+  translation -9.47 0.05 0
+  name "panel(2)"
+  size 0.05 1.6 1.7
+}
+Panel {
+  translation -44.69 -0.16 0
+  name "panel(8)"
+  size 0.05 1.6 1.7
+}
+Panel {
+  translation -44.67 -4.87 0
+  name "panel(6)"
+  size 0.05 1.6 1.7
+}
+Panel {
+  translation -43.53 -2.13 0
+  rotation 0 0 1 -1.5707953071795862
+  name "panel(9)"
+  size 0.05 1.6 1.7
+}
+Panel {
+  translation -41.9196 -2.14578 0
+  rotation 0 0 1 -2.3561953071795863
+  name "panel(5)"
+  size 0.05 1.6 1.7
+}
+Panel {
+  translation -40.4423 -0.667977 0
+  rotation 0 0 1 -2.3561953071795863
+  name "panel(11)"
+  size 0.05 1.6 1.7
+}
+Panel {
+  translation -42.0079 -0.222497 0
+  rotation 0 0 -1 1.8326
+  name "panel(12)"
+  size 0.05 1.6 1.7
+}
+Panel {
+  translation -44.67 -3.27 0
+  rotation 0 0 1 -0.785395307179586
+  name "panel(10)"
+  size 0.05 1.6 1.7
+}
+Panel {
+  translation -44.67 -6.49 0
+  name "panel(7)"
+  size 0.05 1.6 1.7
+}
+Panel {
+  translation -9.47 -1.53 0
+  name "panel(4)"
+  size 0.05 1.6 1.7
+}
+Cabinet {
+  translation -9.444 5.665 -4.197e-22
+  name "cabinet(5)"
+  rowsHeights [
+    0.24, 0.2, 0.2
+  ]
+  columnsWidths [
+    0.6, 0.4, 0.5
+  ]
+  layout [
+    "RightSidedDoor (1, 1,  1, 3, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 3, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.729 0.741 0.713
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.1 0.3 0.8
+  }
+}
+Cabinet {
+  translation 2.01309 5.34773 -7.01661e-14
+  rotation 0 0 1 3.14159
+  name "cabinet(6)"
+  rowsHeights [
+    0.24, 0.2, 0.2
+  ]
+  columnsWidths [
+    0.8, 0.8
+  ]
+  layout [
+    "Drawer(1, 1, 1, 1 1.5)"
+    "Drawer(1, 2, 1, 1 1.5)"
+    "Drawer(1, 3, 1, 1 1.5)"
+    "Drawer(2, 1, 1, 1 1.5)"
+    "Drawer(2, 2, 1, 1 1.5)"
+    "Drawer(2, 3, 1, 1 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.729 0.741 0.713
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.1 0.3 0.8
+  }
+}
+Cabinet {
+  translation 2.01309 3.68773 -7.01661e-14
+  rotation 0 0 1 3.14159
+  name "cabinet(7)"
+  rowsHeights [
+    0.24, 0.2, 0.2
+  ]
+  columnsWidths [
+    0.8, 0.4, 0.4
+  ]
+  layout [
+    "RightSidedDoor (1, 1,  1, 3, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 3, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.729 0.741 0.713
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.1 0.3 0.8
+  }
+}
+Sink {
+  translation -9.27377 6.09349 0.74
+}
+Cabinet {
+  translation -9.49 -2.087 0
+  name "cabinet(1)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.729 0.741 0.713
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.1 0.3 0.8
+  }
+}
+Cabinet {
+  translation -9.49 -3.17 0
+  name "cabinet(82)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.729 0.741 0.713
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.1 0.3 0.8
+  }
+}
+Cabinet {
+  translation -9.49 -1.01 0
+  name "cabinet(83)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.729 0.741 0.713
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.1 0.3 0.8
+  }
+}
+Cabinet {
+  translation -24.15 -3.68 0
+  name "cabinet(2)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.729 0.741 0.713
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.1 0.3 0.8
+  }
+}
+Cabinet {
+  translation -21.59 -5.91 0
+  name "cabinet(3)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.729 0.741 0.713
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.1 0.3 0.8
+  }
+}
+Cabinet {
+  translation -21.59 -4.82 0
+  name "cabinet(4)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.729 0.741 0.713
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.1 0.3 0.8
+  }
+}
+Cabinet {
+  hidden rotation_11 0 0 -1 0.010007975785197019
+  translation -21.59 -3.69 0
+  name "cabinet(84)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.729 0.741 0.713
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.1 0.3 0.8
+  }
+}
+Cabinet {
+  translation -21.59 -1.35 0
+  name "cabinet(85)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.729 0.741 0.713
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.1 0.3 0.8
+  }
+}
+Cabinet {
+  translation -21.59 -0.25 0
+  name "cabinet(86)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.729 0.741 0.713
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.1 0.3 0.8
+  }
+}
+Cabinet {
+  translation -21.59 0.85 0
+  name "cabinet(8)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.729 0.741 0.713
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.1 0.3 0.8
+  }
+}
+Cabinet {
+  translation -21.59 1.97 0
+  name "cabinet(9)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.729 0.741 0.713
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.1 0.3 0.8
+  }
+}
+Cabinet {
+  translation -21.59 4.72 0
+  name "cabinet(10)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.729 0.741 0.713
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.1 0.3 0.8
+  }
+}
+Cabinet {
+  translation -21.59 5.83 0
+  name "cabinet(11)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.729 0.741 0.713
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.1 0.3 0.8
+  }
+}
+Cabinet {
+  translation -24.15 -2.57 0
+  name "cabinet(12)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.729 0.741 0.713
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.1 0.3 0.8
+  }
+}
+Cabinet {
+  translation -24.15 -1.52 0
+  name "cabinet(13)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.729 0.741 0.713
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.1 0.3 0.8
+  }
+}
+Cabinet {
+  translation -24.15 1.96 0
+  name "cabinet(14)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.729 0.741 0.713
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.1 0.3 0.8
+  }
+}
+Cabinet {
+  translation -24.15 3.15 0
+  name "cabinet(15)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.729 0.741 0.713
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.1 0.3 0.8
+  }
+}
+Cabinet {
+  translation -24.15 4.25 0
+  name "cabinet(16)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.729 0.741 0.713
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.1 0.3 0.8
+  }
+}
+Cabinet {
+  translation 39.24 -6.43 0
+  rotation 0 0 1 1.5708
+  name "cabinet(17)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.729 0.741 0.713
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+}
+Cabinet {
+  translation 40.37 -6.43 0
+  rotation 0 0 1 1.5708
+  name "cabinet(18)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.729 0.741 0.713
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+}
+Cabinet {
+  translation 40.37 -1.25 0
+  rotation 0 0 1 -1.5707953071795862
+  name "cabinet(19)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+}
+Cabinet {
+  translation 39.25 -1.25 0
+  rotation 0 0 1 -1.5707953071795862
+  name "cabinet(20)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+}
+Cabinet {
+  translation 38.13 -1.25 0
+  rotation 0 0 1 -1.5707953071795862
+  name "cabinet(21)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+}
+Cabinet {
+  translation 33.23 -1.25 0
+  rotation 0 0 1 -1.5707953071795862
+  name "cabinet(22)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+}
+Cabinet {
+  translation 31.92 -1.25 0
+  rotation 0 0 1 -1.5707953071795862
+  name "cabinet(23)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+}
+Cabinet {
+  translation 26.98 -0.429999 0
+  rotation 0 0 1 3.14159
+  name "cabinet(25)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+}
+Cabinet {
+  translation 26.98 -1.57 0
+  rotation 0 0 1 3.14159
+  name "cabinet(26)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+}
+Cabinet {
+  translation 26.98 -2.71 0
+  rotation 0 0 1 3.14159
+  name "cabinet(27)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+}
+Cabinet {
+  translation 26.98 -5.89 0
+  rotation 0 0 1 3.14159
+  name "cabinet(28)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+}
+Cabinet {
+  translation 29.58 -5.89 0
+  rotation 0 0 1 3.14159
+  name "cabinet(29)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+}
+Cabinet {
+  translation 29.58 -4.62 0
+  rotation 0 0 1 3.14159
+  name "cabinet(89)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+}
+Cabinet {
+  translation 29.58 -3.35 0
+  rotation 0 0 1 3.14159
+  name "cabinet(30)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+}
+Cabinet {
+  translation 29.58 -2.04 0
+  rotation 0 0 1 3.14159
+  name "cabinet(24)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+}
+Cabinet {
+  translation 26.98 0.77 0
+  rotation 0 0 1 3.14159
+  name "cabinet(31)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+}
+Cabinet {
+  translation 26.98 1.98 0
+  rotation 0 0 1 3.14159
+  name "cabinet(32)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+}
+Cabinet {
+  translation 26.98 3.11 0
+  rotation 0 0 1 3.14159
+  name "cabinet(33)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+}
+Cabinet {
+  translation 26.98 4.3 0
+  rotation 0 0 1 3.14159
+  name "cabinet(34)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+}
+Cabinet {
+  translation -28.01 -2.76 0
+  rotation 0 0 1 -1.5707953071795862
+  name "cabinet(35)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+}
+Cabinet {
+  translation -28.01 0.35 0
+  rotation 0 0 1 -1.5707953071795862
+  name "cabinet(36)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+}
+Cabinet {
+  translation -28.1 3.9 0
+  rotation 0 0 1 -1.5707953071795862
+  name "cabinet(37)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+}
+Cabinet {
+  translation -35.1 3.9 0
+  rotation 0 0 1 -1.5707953071795862
+  name "cabinet(38)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+}
+Cabinet {
+  translation -31.38 3.9 0
+  rotation 0 0 1 -1.5707953071795862
+  name "cabinet(39)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+}
+Cabinet {
+  translation -38.96 3.9 0
+  rotation 0 0 1 -1.5707953071795862
+  name "cabinet(40)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+}
+Cabinet {
+  translation -29.91 -5.67 0
+  rotation 0 0 1 -1.5707953071795862
+  name "cabinet(41)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+}
+Cabinet {
+  translation -31.25 -2.76 0
+  rotation 0 0 1 -1.5707953071795862
+  name "cabinet(42)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+}
+Cabinet {
+  translation -38.63 -3.85 0
+  rotation 0 0 1 -1.5707953071795862
+  name "cabinet(43)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+}
+Cabinet {
+  translation -35.06 -3.85 0
+  rotation 0 0 1 -1.5707953071795862
+  name "cabinet(44)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+}
+Cabinet {
+  translation -35.06 -1.11 0
+  rotation 0 0 1 -1.5707953071795862
+  name "cabinet(45)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+}
+Cabinet {
+  translation -38.71 -1.07 0
+  rotation 0 0 1 -1.5707953071795862
+  name "cabinet(46)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+}
+Cabinet {
+  translation -39.87 0.55 0
+  rotation 0 0 1 -1.5707953071795862
+  name "cabinet(47)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+}
+Cabinet {
+  translation -42.7 0.54 0
+  rotation 0 0 1 -1.5707953071795862
+  name "cabinet(48)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+}
+Cabinet {
+  translation -43.86 0.56 0
+  rotation 0 0 1 -1.5707953071795862
+  name "cabinet(49)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+}
+Cabinet {
+  translation -44.92 2.22 0
+  rotation 0 0 1 -1.5707953071795862
+  name "cabinet(50)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+}
+Cabinet {
+  translation 34.44 -1.25 0
+  rotation 0 0 1 -1.5707953071795862
+  name "cabinet(51)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+}
+Cabinet {
+  translation 40.37 3.23 0
+  rotation 0 0 1 -1.5707953071795862
+  name "cabinet(52)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+}
+Cabinet {
+  translation 39.29 3.23 0
+  rotation 0 0 1 -1.5707953071795862
+  name "cabinet(53)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+}
+Cabinet {
+  translation 38.1 3.23 0
+  rotation 0 0 1 -1.5707953071795862
+  name "cabinet(54)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+}
+Cabinet {
+  translation 34.64 3.23 0
+  rotation 0 0 1 -1.5707953071795862
+  name "cabinet(55)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+}
+Cabinet {
+  translation 33.36 3.23 0
+  rotation 0 0 1 -1.5707953071795862
+  name "cabinet(56)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+}
+Cabinet {
+  translation 32.05 3.23 0
+  rotation 0 0 1 -1.5707953071795862
+  name "cabinet(57)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+}
+Cabinet {
+  translation 30.77 3.23 0
+  rotation 0 0 1 -1.5707953071795862
+  name "cabinet(58)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+}
+Cabinet {
+  translation 29.48 3.23 0
+  rotation 0 0 1 -1.5707953071795862
+  name "cabinet(59)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+}
+Cabinet {
+  translation 24.44 3.23 0
+  rotation 0 0 -1 1.5708
+  name "cabinet(60)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.870588 0.866667 0.854902
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.870588 0.866667 0.854902
+  }
+}
+Cabinet {
+  translation 23.26 5.26 0
+  rotation 0 0 -1 1.5708
+  name "cabinet(61)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.870588 0.866667 0.854902
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.870588 0.866667 0.854902
+  }
+}
+Cabinet {
+  translation 20.77 5.26 0
+  rotation 0 0 -1 1.5708
+  name "cabinet(62)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.870588 0.866667 0.854902
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.870588 0.866667 0.854902
+  }
+}
+Cabinet {
+  translation 17.89 5.26 0
+  rotation 0 0 -1 1.5708
+  name "cabinet(63)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.870588 0.866667 0.854902
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.870588 0.866667 0.854902
+  }
+}
+Cabinet {
+  translation 15.18 5.26 0
+  rotation 0 0 -1 1.5708
+  name "cabinet(64)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.870588 0.866667 0.854902
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.870588 0.866667 0.854902
+  }
+}
+Cabinet {
+  translation 12.22 5.26 0
+  rotation 0 0 -1 1.5708
+  name "cabinet(65)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.870588 0.866667 0.854902
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.870588 0.866667 0.854902
+  }
+}
+Cabinet {
+  translation 9.58 5.26 0
+  rotation 0 0 -1 1.5708
+  name "cabinet(66)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.870588 0.866667 0.854902
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.870588 0.866667 0.854902
+  }
+}
+Cabinet {
+  translation 24.34 1.09 0
+  rotation 0 0 -1 1.5708
+  name "cabinet(67)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.870588 0.866667 0.854902
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.870588 0.866667 0.854902
+  }
+}
+Cabinet {
+  translation 22.04 1.09 0
+  rotation 0 0 -1 1.5708
+  name "cabinet(68)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.870588 0.866667 0.854902
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.870588 0.866667 0.854902
+  }
+}
+Cabinet {
+  translation 19.34 1.09 0
+  rotation 0 0 -1 1.5708
+  name "cabinet(69)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.870588 0.866667 0.854902
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.870588 0.866667 0.854902
+  }
+}
+Cabinet {
+  translation 16.73 1.09 0
+  rotation 0 0 -1 1.5708
+  name "cabinet(70)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.870588 0.866667 0.854902
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.870588 0.866667 0.854902
+  }
+}
+Cabinet {
+  translation 13.64 1.09 0
+  rotation 0 0 -1 1.5708
+  name "cabinet(71)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.870588 0.866667 0.854902
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.870588 0.866667 0.854902
+  }
+}
+Cabinet {
+  translation 11.19 1.09 0
+  rotation 0 0 -1 1.5708
+  name "cabinet(72)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.870588 0.866667 0.854902
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.870588 0.866667 0.854902
+  }
+}
+Cabinet {
+  translation 22.04 3.23 0
+  rotation 0 0 1 -1.5707953071795862
+  name "cabinet(73)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.870588 0.866667 0.854902
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.870588 0.866667 0.854902
+  }
+}
+Cabinet {
+  translation 19.34 3.23 0
+  rotation 0 0 1 -1.5707953071795862
+  name "cabinet(74)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.870588 0.866667 0.854902
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.870588 0.866667 0.854902
+  }
+}
+Cabinet {
+  translation 16.72 3.23 0
+  rotation 0 0 1 -1.5707953071795862
+  name "cabinet(75)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.870588 0.866667 0.854902
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.870588 0.866667 0.854902
+  }
+}
+Cabinet {
+  translation 13.76 -6.51 0
+  rotation 0 0 1 1.5708
+  name "cabinet(76)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.870588 0.866667 0.854902
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.870588 0.866667 0.854902
+  }
+}
+Cabinet {
+  translation 13.71 3.23 0
+  rotation 0 0 1 -1.5707953071795862
+  name "cabinet(77)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.870588 0.866667 0.854902
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.870588 0.866667 0.854902
+  }
+}
+Cabinet {
+  translation 11.13 3.23 0
+  rotation 0 0 1 -1.5707953071795862
+  name "cabinet(78)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.870588 0.866667 0.854902
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.870588 0.866667 0.854902
+  }
+}
+Cabinet {
+  translation 6.62 3.23 0
+  rotation 0 0 1 -1.5707953071795862
+  name "cabinet(79)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.870588 0.866667 0.854902
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.870588 0.866667 0.854902
+  }
+}
+Cabinet {
+  translation 38.19 -6.43 0
+  rotation 0 0 1 1.5708
+  name "cabinet(80)"
+  depth 0.7
+  columnsWidths [
+    0.5, 0.25, 0.25
+  ]
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.729 0.741 0.713
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.368627 0.360784 0.392157
+  }
+}
+ConveyorBelt {
+  hidden linearVelocity_1 0 0 -1.6484591469634325e-15
+  translation 3.14141 -3.91763 0
+  rotation 0 0 1 3.14159
+  name "conveyor belt(4)"
+  size 8 0.8 0.9
+  appearance CorrugatedMetal {
+    textureTransform TextureTransform {
+      scale 6 3.1
+    }
+  }
+  borderHeight 0
+  speed 1
+}
+ConveyorBelt {
+  hidden linearVelocity_1 0 0 -1.6484591469634325e-15
+  hidden angularVelocity_1 -7.490682167503626e-94 7.637614223366362e-100 1.1133570045666014e-172
+  translation -5.29859 -2.42763 0.1
+  rotation 0 0 -1 -1.5707953071795862
+  name "conveyor belt(3)"
+  size 8 0.8 0.9
+  appearance CorrugatedMetal {
+    textureTransform TextureTransform {
+      scale 6 3.1
+    }
+  }
+  borderHeight 0
+  speed 1
+}
+PlasticCrate {
+  translation -1.39898 -3.91415 5.41788e-14
+  name "plastic crate(5)"
+  size 1 1 0.9
+}
+PlasticCrate {
+  translation -5.46898 2.15585 5.41788e-14
+  name "plastic crate(7)"
+  size 1 1 0.9
+}
+PlasticCrate {
+  translation 24.021 -5.82415 5.41788e-14
+  name "plastic crate(6)"
+  size 1 1 0.9
+}
+Table {
+  translation 3.097723 2.013972 0
+  size 1.8 0.8 0.7
+  feetSize 0.05 0.05
+  trayAppearance PBRAppearance {
+    baseColor 0.926 0.912 0.698
+    roughness 0.8
+    metalness 0
+  }
+  legAppearance BrushedAluminium {
+    colorOverride 0.333 0.341 0.325
+  }
+}
+Table {
+  translation 32.4877 -6.03603 0
+  name "table(2)"
+  size 1.8 0.8 0.7
+  feetSize 0.05 0.05
+  trayAppearance PBRAppearance {
+    baseColor 0.926 0.912 0.698
+    roughness 0.8
+    metalness 0
+  }
+  legAppearance BrushedAluminium {
+    colorOverride 0.333 0.341 0.325
+  }
+}
+Table {
+  translation -17.3523 -5.52603 0
+  rotation 0 0 1 -1.5707953071795862
+  name "table(3)"
+  size 1.8 0.8 0.7
+  feetSize 0.05 0.05
+  trayAppearance PBRAppearance {
+    baseColor 0.926 0.912 0.698
+    roughness 0.8
+    metalness 0
+  }
+  legAppearance BrushedAluminium {
+    colorOverride 0.333 0.341 0.325
+  }
+}
+Table {
+  translation -17.3523 3.73397 0
+  rotation 0 0 1 1.01503e-06
+  name "table(5)"
+  size 1.8 0.8 0.7
+  feetSize 0.05 0.05
+  trayAppearance PBRAppearance {
+    baseColor 0.926 0.912 0.698
+    roughness 0.8
+    metalness 0
+  }
+  legAppearance BrushedAluminium {
+    colorOverride 0.333 0.341 0.325
+  }
+}
+Table {
+  translation -13.9823 -0.50603 0
+  rotation 0 0 1 -1.5707953071795862
+  name "table(4)"
+  size 1.8 0.1 0.7
+  feetSize 0.05 0.05
+  trayAppearance PBRAppearance {
+    baseColor 0.878431 0.105882 0.141176
+    roughness 0.8
+    metalness 0
+  }
+  legAppearance BrushedAluminium {
+    colorOverride 0.333 0.341 0.325
+  }
+}
+OfficeChair {
+  hidden linearVelocity_0 2.6917957660187107e-08 4.8386140391122365e-06 -3.14295029893784e-05
+  hidden angularVelocity_0 -3.400934022825546e-05 1.8920642667401026e-07 2.7463207367551732e-11
+  translation 32.58870008781602 -5.274536593495587 -0.0014112070899807705
+  rotation -0.0007772682936396 -0.000697025025895322 -0.9999994550049079 1.4721550686324791
+}
+DesktopComputer {
+  translation 31.94 -6.24 0.71
+  rotation 0 0 1 1.5708
+  name "desktop computer(1)"
+}
+WoodenChair {
+  translation 2.921084 1.648051 0
+  rotation 0 0 1 1.83259
+}
+Monitor {
+  translation 2.520237 2.108887 0.7
+  rotation -7.19233e-09 -9.37323e-09 1 -1.3089953071795861
+}
+Monitor {
+  translation 32.5501 -6.19435 0.7
+  rotation -7.19232e-09 5.51885e-09 -1 -1.8326053071795858
+  name "monitor(2)"
+}
+Monitor {
+  translation -17.4479 -5.25158 0.7
+  rotation 5.09084e-08 2.1087e-08 -1 0.261798
+  name "monitor(1)"
+}
+Keyboard {
+  translation 2.594212 1.8802 0.7
+  rotation 0 0 1 1.83259
+}
+Keyboard {
+  translation -17.1413 -5.34555 0.7
+  rotation 0 0 1 2.87979
+  name "keyboard(1)"
+}
+DesktopComputer {
+  translation 2.331033 2.125086 0
+  rotation 0 0 1 -1.5707953071795862
+}
+ComputerMouse {
+  translation 2.94663 1.914183 0.7
+  rotation 0 0 -1 -1.3089953071795861
+  mass 0
+}
+Table {
+  translation -1.41991 -0.52333 0
+  rotation 0 0 1 -1.5707953071795862
+  name "table(1)"
+  size 1.8 0.8 0.7
+  feetSize 0.05 0.05
+  trayAppearance PBRAppearance {
+    baseColor 0.926 0.912 0.698
+    roughness 0.8
+    metalness 0
+  }
+  legAppearance BrushedAluminium {
+    colorOverride 0.333 0.341 0.325
+  }
+}
+OfficeTelephone {
+  hidden linearVelocity_0 2.8981240427774335e-06 -1.0178856486392037e-06 -1.0717742118174471e-05
+  hidden angularVelocity_0 2.2254404757756233e-05 6.336334493548282e-05 -2.9960703793356305e-10
+  translation -0.27569506380096975 -0.6022861569743058 0.0307337701075035
+  rotation -0.6310138123917859 0.7614901399159969 0.14816995438178276 2.230478374506944
+}
+Wrench {
+  hidden linearVelocity_0 -1.7141578254337035e-09 -3.0281204041067104e-09 -1.3017134943519636e-06
+  hidden angularVelocity_0 1.3223844167291645e-06 -7.486627195774274e-07 4.7735369441069805e-11
+  translation -1.2349388154615721 -0.575784252855429 0.7054419028844382
+  rotation -0.1420526453359801 0.989859104044039 -9.704756473626467e-06 -3.1410136417588497
+}
+Hammer {
+  hidden linearVelocity_0 3.83010519458038e-07 -4.363282061203402e-07 -6.211096449280637e-06
+  hidden angularVelocity_0 3.356738604950419e-05 2.9463236073902603e-05 -2.9716498656511937e-09
+  translation -1.5379464483772531 -0.37091766574349827 0.7124955224472819
+  rotation -0.0024041102644817712 -0.0070053144204060835 0.9999725725357207 1.5527018896062228
+}
+PlatformCart {
+  hidden linearVelocity_0 5.206659070363372e-07 2.2897822867098076e-07 -0.00033122201283609834
+  hidden angularVelocity_0 -3.963897567528109e-05 0.0001446054681899899 1.389944416745385e-07
+  translation 0.7431106260763565 1.742640665628778 -0.0029667746990568733
+  rotation 0.0006508829956226536 8.807703445015665e-05 0.9999997842968577 -2.875781501168646
+}
+LeverValve {
+  translation -0.73 -0.83 0.502
+  rotation 0 0 1 3.14159
+}
+Radiator {
+  translation 0.528902 2.341308 0.33
+  rotation 0 0 1 -1.5707953071795862
+  numberOfFins 16
+}
+WoodenPalletStack {
+  translation 2.8 -0.23 0
+  rotation 0 1 0 0
+  palletNumber 5
+  palletSize 1 0.8 0.11
+}
+Cabinet {
+  translation -0.4 2.47 0
+  rotation 0 0 1 -1.5707953071795862
+  name "cabinet(87)"
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.729 0.741 0.713
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.1 0.3 0.8
+  }
+}
+CardboardBox {
+  translation -1.21 2.18 0.3
+  rotation 0 0 1 -1.5707953071795862
+}
+CardboardBox {
+  translation -1.198389 2.100678 0.75
+  rotation 0 0 -1 -0.523595307179586
+  name "cardboard box(1)"
+  size 0.6 0.4 0.3
+}
+RectangleArena {
+  floorSize 100 13
+  floorAppearance ThreadMetalPlate {
+  }
+  wallThickness 0.3
+  wallHeight 2.5
+  wallAppearance RoughPolymer {
+    baseColor 0.870588 0.866667 0.854902
+  }
+}
+CardboardBox {
+  translation -6.15 1.3 0.3
+  name "cardboard box(5)"
+}
+RubberDuck {
+  hidden linearVelocity_0 -5.185263432967136e-18 -1.4475481786848177e-17 -1.3350572591798755e-06
+  hidden angularVelocity_0 7.488320736780258e-16 -4.697871045703554e-16 8.803598832133629e-17
+  translation -25.429197115571192 0.25954901985922846 0.0204381928649362
+  rotation 1.0688864794146017e-11 -2.7079049302880528e-12 -1 5.855295171735658e-06
+}
+WoodenPalletStack {
+  translation -49.39 3.68 0
+  name "wooden pallet stack(2)"
+}
+WoodenPalletStack {
+  translation -49.39 2.67 0
+  name "wooden pallet stack(3)"
+}
+CardboardBox {
+  translation -16.06 0 0.3
+  name "cardboard box(2)"
+}
+CardboardBox {
+  translation -9.06 -0.12 0.3
+  name "cardboard box(6)"
+}
+CardboardBox {
+  translation -9.06 -0.08 0.92
+  name "cardboard box(7)"
+}
+CardboardBox {
+  translation -16.06 -0.66 0.3
+  name "cardboard box(3)"
+}
+CardboardBox {
+  translation -16.06 -0.66 0.92
+  name "cardboard box(4)"
+}
+StraightStairs {
+  translation -34.74 -0.02 0
+  stepSize 0.2 1.1 0.03
+  stepRise 0.13
+  nSteps 20
+  stringerWidth 0.03
+  stepAppearance ThreadMetalPlate {
+  }
+  stringerAppearance BrushedAluminium {
+  }
+  leftRail [
+    StraightStairsRail {
+      run 3.84
+      rise 2.5
+      newelHeight 0.8
+      balusterHeight 0.62
+      appearance Rubber {
+      }
+    }
+  ]
+  rightRail [
+    StraightStairsRail {
+      run 3.84
+      rise 2.5
+      newelHeight 0.8
+      balusterHeight 0.62
+      appearance Rubber {
+      }
+    }
+  ]
+}
+PlatformCart {
+  hidden linearVelocity_0 -5.64422576770116e-07 -3.381666573957951e-08 -0.0003312220113308717
+  hidden angularVelocity_0 2.259149845468672e-07 -0.00014993973992134373 6.077049338014488e-10
+  translation -19.705297102040415 0.0002828201424180664 -0.0029667746983259025
+  rotation 0.0015120007357255765 -0.9937093126800248 -0.11197997922292999 0.0013102867837883267
+  name "platform cart(1)"
+}
+PlatformCart {
+  hidden linearVelocity_0 -4.818826872548421e-07 -3.164919079585927e-07 -0.00033122203508877286
+  hidden angularVelocity_0 3.7295657544516235e-06 -0.00014989408908946424 7.5015357220491e-07
+  translation 15.680618584309647 -3.0731175790358027 -0.002966774706644193
+  rotation 0.0007411224527744321 -0.056962884309677934 0.9983760216214291 0.022856353574022426
+  name "platform cart(2)"
+}
+TrafficCone {
+  translation -14.81 0.87 0
+}
+TrafficCone {
+  translation -15.46 0.87 0
+  name "traffic cone(1)"
+}
+TrafficCone {
+  translation -16.05 0.87 0
+  name "traffic cone(2)"
+}
+TrafficCone {
+  translation -16.69 0.87 0
+  name "traffic cone(3)"
+}
+TrafficCone {
+  translation -17.35 0.87 0
+  name "traffic cone(4)"
+}
+TrafficCone {
+  translation -45.69 3.38 0
+  name "traffic cone(5)"
+}
+WorkBarrier {
+  translation -14.42 0 0
+}
+WorkBarrier {
+  translation -14.42 -1.19 0
+  name "work barrier(1)"
+}
+WorkBarrier {
+  translation -15.34 -2.08 0
+  rotation 0 0 1 -1.5707953071795862
+  name "work barrier(2)"
+}
+WorkBarrier {
+  translation -16.71 -2.08 0
+  rotation 0 0 1 -1.5707953071795862
+  name "work barrier(3)"
+}
+WorkBarrier {
+  translation -18.09 -2.08 0
+  rotation 0 0 1 -1.5707953071795862
+  name "work barrier(4)"
+}
+WorkBarrier {
+  translation -19.5 -2.08 0
+  rotation 0 0 1 -1.5707953071795862
+  name "work barrier(5)"
+}
+WorkBarrier {
+  translation -20.36 -1.09 0
+  rotation 0 0 1 3.14159
+  name "work barrier(6)"
+}
+WorkBarrier {
+  translation -20.36 0.12 0
+  rotation 0 0 1 3.14159
+  name "work barrier(7)"
+}
+WorkBarrier {
+  translation -19.67 0.7 0
+  rotation 0 0 1 -1.5707953071795862
+  name "work barrier(8)"
+}
+WorkBarrier {
+  translation -18.39 0.7 0
+  rotation 0 0 1 -1.5707953071795862
+  name "work barrier(9)"
+}
+WorkBarrier {
+  translation -49.25 1.35998 0
+  rotation 0 0 1 -1.5707953071795862
+  name "work barrier(10)"
+}
+WorkBarrier {
+  translation -47.94 1.35998 0
+  rotation 0 0 1 -1.5707953071795862
+  name "work barrier(11)"
+}
+WorkBarrier {
+  translation -46.64 1.35998 0
+  rotation 0 0 1 -1.5707953071795862
+  name "work barrier(12)"
+}
+WorkBarrier {
+  translation -45.66 2.26998 0
+  rotation 0 0 1 3.14159
+  name "work barrier(13)"
+}
+WorkBarrier {
+  translation -45.66 4.42998 0
+  rotation 0 0 1 3.14159
+  name "work barrier(14)"
+}
+WorkBarrier {
+  translation -45.66 5.70998 0
+  rotation 0 0 1 3.14159
+  name "work barrier(15)"
+}
+RoundTable {
+  translation 47.59 4.2 0
+}
+FloorLight {
+  translation 49.53 6.01 0
+}
+Sofa {
+  translation 49.46 4.21 0
+  rotation 0 0 1 3.14159
+}
+Sofa {
+  translation 45.76 4.21 0
+  rotation 0 0 1 -5.307179586466759e-06
+  name "sofa(2)"
+}
+Sofa {
+  translation 47.59 6.02 0
+  rotation 0 0 1 -1.5707953071795862
+  name "sofa(1)"
+}
+PottedTree {
+  translation 44.94 2.22 0
+}
+PanelWithTubes {
+  translation 44.85 6.07 0
+  rotation 0 0 1 3.14159
+}
+PanelWithTubes {
+  translation 44.85 5.31 0
+  rotation 0 0 1 3.14159
+  name "panel with tubes(1)"
+}
+PanelWithTubes {
+  translation 44.85 4.54 0
+  rotation 0 0 1 3.14159
+  name "panel with tubes(2)"
+}
+PanelWithTubes {
+  translation 44.85 3.77 0
+  rotation 0 0 1 3.14159
+  name "panel with tubes(3)"
+}
+PanelWithTubes {
+  translation 44.85 3 0
+  rotation 0 0 1 3.14159
+  name "panel with tubes(4)"
+}
+PanelWithTubes {
+  translation 45.69 2.16 0
+  rotation 0 0 1 -1.5707953071795862
+  name "panel with tubes(5)"
+}
+PanelWithTubes {
+  translation 46.46 2.16 0
+  rotation 0 0 1 -1.5707953071795862
+  name "panel with tubes(6)"
+}
+PanelWithTubes {
+  translation 47.24 2.16 0
+  rotation 0 0 1 -1.5707953071795862
+  name "panel with tubes(7)"
+}
+PanelWithTubes {
+  translation 48.01 2.16 0
+  rotation 0 0 1 -1.5707953071795862
+  name "panel with tubes(8)"
+}
+OilBarrel {
+  translation 18.84 -6.2 0.44
+}
+OilBarrel {
+  translation 18.84 -5.53 0.44
+  name "oil barrel(1)"
+}
+OilBarrel {
+  translation 18.84 -4.85 0.44
+  name "oil barrel(2)"
+}
+OilBarrel {
+  translation 19.8 -4.81 0.44
+  name "oil barrel(3)"
+}
+OilBarrel {
+  translation 19.8 -5.39 0.44
+  name "oil barrel(4)"
+}
+OilBarrel {
+  translation 19.8 -6.11 0.44
+  name "oil barrel(5)"
+}
+FireExtinguisher {
+  hidden linearVelocity_0 0.0006279889369634052 -9.379176793743949e-05 -0.0005463022983637234
+  hidden angularVelocity_0 0.0002507790439151558 0.0016791057493730495 3.1012829809093762e-09
+  translation 25.416794022646904 -6.374775485999942 -0.004642643640046684
+  rotation 0.00409409798957831 0.003045587790632047 0.9999869812935873 1.5653435389383157
+  name "fire extinguisher(1)"
+}
+FireExtinguisher {
+  hidden linearVelocity_0 0.0006279917832703644 -9.377270832970333e-05 -0.0005463022983640631
+  hidden angularVelocity_0 0.00025072808267198013 0.001679113359786556 3.1012830329526687e-09
+  translation 8.89685546070197 -6.3747904565116755 -0.00464264364004674
+  rotation 0.004093989307047851 0.0030456034495230416 0.999986981690853 1.5653738887034068
+  name "fire extinguisher(4)"
+}
+FireExtinguisher {
+  hidden linearVelocity_0 3.642437030824295e-05 -2.7636796968706172e-08 -0.000522679450206094
+  hidden angularVelocity_0 -6.861587857078057e-08 8.20013009530994e-05 -1.062633134039212e-06
+  translation -4.754626755713397 -6.374186570302979 -0.004522934379219912
+  rotation 0.017263788912912997 0.015973806850579468 0.9997233612790444 1.5634499953217804
+  name "fire extinguisher(5)"
+}
+FireExtinguisher {
+  hidden linearVelocity_0 0.0006261150351779901 -0.00010557918074493395 -0.0005463022983637596
+  hidden angularVelocity_0 0.0002822960204422414 0.001674095338771801 3.101283106219457e-09
+  translation -14.964341251901663 -6.396508369239782 -0.004642643640046684
+  rotation 0.004162056525356281 0.0030357963713171323 0.9999867305248964 1.546546196681981
+  name "fire extinguisher(6)"
+}
+FireExtinguisher {
+  hidden linearVelocity_0 0.0006284927395338873 -9.035417552398541e-05 -0.0005463022983640256
+  hidden angularVelocity_0 0.0002415876699144766 0.0016804528092723313 3.1012829751897598e-09
+  translation -24.930229984834117 -6.370006899016894 -0.00464264364004674
+  rotation 0.004074557267952116 0.0030484032012526668 0.9999870525266779 1.5708152290886235
+  name "fire extinguisher(7)"
+}
+FireExtinguisher {
+  hidden linearVelocity_0 0.000628492739534422 -9.03541755238455e-05 -0.0005463022983640637
+  hidden angularVelocity_0 0.00024158766991407905 0.0016804528092737331 3.1012829413799632e-09
+  translation -35.6102299848343 -6.370046899016883 -0.00464264364004674
+  rotation 0.004074557267951741 0.0030484032012524473 0.9999870525266779 1.570815229088611
+  name "fire extinguisher(8)"
+}
+FireExtinguisher {
+  hidden linearVelocity_0 0.0006284926236517735 -9.035498159928903e-05 -0.0005463022983637978
+  hidden angularVelocity_0 0.00024158982518438643 0.0016804524994283327 3.1012829464581904e-09
+  translation -38.62092610557815 -6.370011998820598 -0.004642643640046906
+  rotation 0.004074561835665984 0.00304840254314637 0.9999870525100724 1.5708139465515791
+  name "fire extinguisher(9)"
+}
+FireExtinguisher {
+  hidden linearVelocity_0 0.0006284927395344235 -9.035417552393348e-05 -0.0005463022983641389
+  hidden angularVelocity_0 0.000241587669914286 0.001680452809273771 3.1012830290992776e-09
+  translation 35.42977001516571 -6.3699668990168865 -0.00464264364004674
+  rotation 0.0040745572679517575 0.003048403201252443 0.9999870525266779 1.5708152290886157
+  name "fire extinguisher(2)"
+}
+FireExtinguisher {
+  hidden linearVelocity_0 0.0006284927395344235 -9.035417552393348e-05 -0.0005463022983641389
+  hidden angularVelocity_0 0.000241587669914286 0.001680452809273771 3.1012830290992776e-09
+  translation 45.45977001516571 -6.3699668990168865 -0.00464264364004674
+  rotation 0.0040745572679517575 0.003048403201252443 0.9999870525266779 1.5708152290886157
+  name "fire extinguisher(3)"
+}
+WoodenPalletStack {
+  translation 16.07 -6.09 0
+  name "wooden pallet stack(4)"
+}
+EmergencyExitSign {
+  translation 43.79 -6.46 2.17999
+  rotation 3.3905113482557537e-09 0.70710528118436 0.707108281185553 3.14159
+}
+Pose {
+  translation 1.77 6.5 1.05
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 0
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.23 0.01 0.3
+      }
+    }
+  ]
+}
+AdvertisingBoard {
+  translation -47.85 -6.58 0.94
+  rotation 0 0 1 1.5708
+  frontTexture [
+    "https://www.peakgrantmaking.org/wp-content/uploads/2019/01/No-Pain-No-Gain.jpg"
+  ]
+  displayWidth 1
+  displayHeight 1
+}
+SolidBox {
+  translation -0.135 -0.0323 0.305
+  rotation 1 0 0 1.5707963267948966
+  size 1.5 0.61 0.4
+  appearance GalvanizedMetal {
+  }
+}
+SolidBox {
+  translation 1.015 -0.0323 0.45
+  rotation 1 0 0 1.5707963267948966
+  name "box(5)"
+  size 0.8 0.91 0.4
+  appearance GalvanizedMetal {
+  }
+}
+SolidBox {
+  translation 0.8 0.329556 0.819996
+  rotation 1 0 0 2.617993326794896
+  name "box(6)"
+  size 0.3 0.5 0.02
+  contactMaterial "slope"
+  appearance GalvanizedMetal {
+  }
+}
+SolidBox {
+  translation 0.96 0.339556 0.837316
+  rotation 0.694746421648147 -0.1861573591797 -0.694746606490694 2.773491823864185
+  name "box(7)"
+  size 0.05 0.5 0.02
+  appearance GalvanizedMetal {
+  }
+}
+SolidBox {
+  translation 0.64 0.339556 0.837316
+  rotation 0.694746421648147 -0.1861573591797 -0.694746606490694 2.773491823864185
+  name "box(8)"
+  size 0.05 0.5 0.02
+  appearance GalvanizedMetal {
+  }
+}
+SolidBox {
+  translation 0.64 0.239196 0.583496
+  rotation 0.654654231301536 0.377963904659711 -0.654653438250637 3.86432712001869
+  name "box(9)"
+  size 0.05 0.5 0.02
+  appearance GalvanizedMetal {
+  }
+}
+SolidBox {
+  translation 0.96 0.239196 0.583496
+  rotation 0.654654231301536 0.377963904659711 -0.654653438250637 3.86432712001869
+  name "box(10)"
+  size 0.05 0.5 0.02
+  appearance GalvanizedMetal {
+  }
+}
+SolidBox {
+  translation 1.77 -0.11 0.375
+  name "box(2)"
+  size 0.2 0.18 0.75
+  appearance CorrugatedMetal {
+    textureTransform TextureTransform {
+      scale 0.7 0.7
+    }
+  }
+}
+SolidBox {
+  translation 1.77 2.43 0.375
+  name "box(3)"
+  size 0.2 0.18 0.75
+  appearance CorrugatedMetal {
+    textureTransform TextureTransform {
+      scale 0.7 0.7
+    }
+  }
+}
+FireExtinguisher {
+  hidden linearVelocity_0 -1.3891882000570401e-05 -0.00011148213165506027 -0.0003667846735753143
+  hidden angularVelocity_0 0.0008692538472671256 -0.0004429817890852565 -5.402931425835016e-05
+  translation -0.5214200114027705 1.8705582274376746 0.09193716753063988
+  rotation 0.6038831744671213 -0.402101631582312 0.6882146391020431 -2.6036478465962896
+}
+ConveyorBelt {
+  hidden linearVelocity_1 0 0 -6.252776074688881e-16
+  translation 3.18 -1.05 0
+  rotation 0 0 1 3.14159
+  size 8 0.7 0.6
+  appearance CorrugatedMetal {
+    textureTransform TextureTransform {
+      scale 6 3.1
+    }
+  }
+  borderHeight 0
+  speed 0.2
+}
+ConveyorBelt {
+  hidden linearVelocity_1 0 0 -1.6484591469634325e-15
+  translation 1.77 2.55 0.75
+  rotation 0 0 1 -1.5707953071795862
+  name "conveyor belt(2)"
+  size 8 0.15 0.15
+  appearance CorrugatedMetal {
+    textureTransform TextureTransform {
+      scale 6 3.1
+    }
+  }
+  borderHeight 0
+  speed 0.2
+}
+ConveyorBelt {
+  hidden linearVelocity_1 -1.569729829370526e-13 -1.9454675425630553e-15 1.7269786667382825e-09
+  hidden angularVelocity_1 -1.848350484553784e-11 8.000047666253141e-10 -6.322649446282986e-16
+  translation 0 0.69 0
+  name "conveyor belt(1)"
+  size 6 0.5 0.25
+  appearance CorrugatedMetal {
+    textureTransform TextureTransform {
+      scale 6 3.1
+    }
+  }
+  borderHeight 0
+  speed 0
+  timer 90
+}
+PlasticCrate {
+  hidden linearVelocity_0 -4.215942149341883e-09 -1.1186318715013483e-10 -8.66095243742394e-06
+  hidden angularVelocity_0 1.4094440798944134e-10 -2.9562012071724646e-09 1.603864073694074e-14
+  translation 0.5973144148276559 0.6660079254514496 0.2490915872084515
+  rotation 0.023553409157860687 -0.9912103128829888 0.13018199780096262 0.00024050041082139493
+  size 0.6 0.45 0.4
+  mass 1
+}
+PlasticCrate {
+  hidden linearVelocity_0 -4.216176005810944e-09 -1.1180992789229225e-10 -8.659965771982985e-06
+  hidden angularVelocity_0 1.4059293904851334e-10 -2.9561937236945546e-09 1.5998658298076713e-14
+  translation -0.5942148813973589 0.6785572379723775 0.24880781722670625
+  rotation 0.020068968396551517 -0.8466856596175081 0.5317148016611569 0.00028155292287048854
+  name "plastic crate(1)"
+  size 0.6 0.45 0.4
+  mass 1
+}
+PlasticCrate {
+  hidden linearVelocity_0 -4.2162578105239276e-09 -1.0340966760059228e-10 -8.6594033503501e-06
+  hidden angularVelocity_0 8.956523006334612e-11 -2.9558772781283064e-09 3.860550040948786e-15
+  translation -1.273831383284893 0.7037748826881487 0.24864606464364888
+  rotation 0.00020616695977605857 -0.013691222381152394 0.9999062495678755 0.017414784858540783
+  name "plastic crate(2)"
+  size 0.6 0.45 0.4
+  mass 1
+}
+PlasticCrate {
+  hidden linearVelocity_0 -4.216535620292199e-09 -1.1314461087556698e-10 -8.658602588468445e-06
+  hidden angularVelocity_0 1.4865878346131706e-10 -2.9564058098549786e-09 1.7910982272552455e-14
+  translation -2.2398296791605983 0.669435824532596 0.24841575425354265
+  rotation 0.002307093156403606 -0.0920267070802656 -0.9957538664274073 0.002590323750410942
+  name "plastic crate(3)"
+  size 0.6 0.45 0.4
+  mass 1
+}
+PlasticCrate {
+  hidden linearVelocity_0 -4.215824764786589e-09 -1.1191516673778845e-10 -8.66145097569414e-06
+  hidden angularVelocity_0 1.4127421204491244e-10 -2.956209731308318e-09 1.6108702022744242e-14
+  translation 1.198927926896756 0.6786822609469157 0.2492349727633721
+  rotation 0.022548235090374586 -0.9466693894607597 -0.3214166208401515 0.0002518156520440154
+  name "plastic crate(4)"
+  size 0.6 0.45 0.4
+  mass 1
+}
+TJoint {
+  translation 13.72 -1.43 0.4
+  scale 15 5 5
+}
+TJoint {
+  translation 16.94 -1.43 0.4
+  name "T joint pipe(1)"
+  scale 15 5 5
+}
+TJoint {
+  translation 20.17 -1.43 0.4
+  name "T joint pipe(2)"
+  scale 15 5 5
+}
+TJoint {
+  translation 22.32 -2.63 0.4
+  rotation 0 0 1 -1.5707953071795862
+  name "T joint pipe(3)"
+  scale 6 5 5
+}
+TJoint {
+  translation 11.56 -2.63 0.4
+  rotation 0 0 -0.9999999999999999 1.5707953071795862
+  name "T joint pipe(5)"
+  scale 6 5 5
+}
+TJoint {
+  translation 22.32 -4.89 0.4
+  rotation 0 0 1 -1.5707953071795862
+  name "T joint pipe(4)"
+  scale 15.2 5 5
+}
+TJoint {
+  translation 11.55 -4.89 0.4
+  rotation 0 0 1 -1.5707953071795862
+  name "T joint pipe(6)"
+  scale 15.2 5 5
+}
+Door {
+  translation 44.29 -6.62 0
+  rotation 0 0 1 1.5708
+  position -0.0010479723136160857
+  doorAppearance GlossyPaint {
+    baseColor 0.16 0.16 0.16
+  }
+  frameAppearance GlossyPaint {
+    baseColor 0.32 0.32 0.32
+  }
+  doorHandle DoorKnob {
+  }
+}
+Door {
+  translation 43.3 -6.62 0
+  rotation 0 0 1 1.5708
+  name "door(1)"
+  position 0.0010479723136191954
+  jointAtLeft FALSE
+  doorAppearance GlossyPaint {
+    baseColor 0.16 0.16 0.16
+  }
+  frameAppearance GlossyPaint {
+    baseColor 0.32 0.32 0.32
+  }
+  doorHandle DoorKnob {
+  }
+}
+LJoint {
+  translation 11.77 -1.65 0.51
+  rotation 1 0 0 1.5708
+  scale 5 5 5
+}
+LJoint {
+  translation 22.1 -1.65 0.51
+  rotation -0.5773509358554485 0.5773489358556708 0.5773509358554485 -2.094395307179586
+  name "L joint pipe(1)"
+  scale 5 5 5
+}
+ElectricalCabinet {
+  translation 26.21 6.25 0
+  rotation 0 0 1 -1.5707953071795862
+}
+ElectricalCabinet {
+  translation 26.88 6.25 0
+  rotation 0 0 1 -1.5707953071795862
+  name "electrical cabinet(88)"
+}
+ElectricalCabinet {
+  translation 27.58 6.25 0
+  rotation 0 0 1 -1.5707953071795862
+  name "electrical cabinet(81)"
+}
+OilBarrel {
+  translation -49.52 6.01 0.44
+  name "oil barrel(6)"
+}
+OilBarrel {
+  translation -48.89 6.01 0.44
+  name "oil barrel(7)"
+}
+OilBarrel {
+  translation -48.89 5.23 0.44
+  name "oil barrel(8)"
+}
+OilBarrel {
+  translation -48.24 5.23 0.44
+  name "oil barrel(10)"
+}
+OilBarrel {
+  translation -48.24 5.99 0.44
+  name "oil barrel(11)"
+}
+OilBarrel {
+  translation -47.56 5.99 0.44
+  name "oil barrel(12)"
+}
+OilBarrel {
+  translation -47.56 5.32 0.44
+  name "oil barrel(13)"
+}
+OilBarrel {
+  translation -46.91 5.32 0.44
+  name "oil barrel(14)"
+}
+OilBarrel {
+  translation -46.91 6.03 0.44
+  name "oil barrel(15)"
+}
+OilBarrel {
+  translation -49.56 5.23 0.44
+  name "oil barrel(9)"
+}
+OilBarrel {
+  translation -49.56 4.6 0.44
+  name "oil barrel(16)"
+}
+OilBarrel {
+  translation -48.86 4.55 0.44
+  name "oil barrel(17)"
+}
