@@ -1,0 +1,33 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "../protos/LD90.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/humans/pedestrian/protos/Pedestrian.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/tables/protos/Table.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation 0.15607806402707106 0.9446139535513969 -0.2886938113045736 1.0396577816417925
+  position -11.517290070728295 2.3394825189707884 18.42376592542425
+}
+LD90 {
+  translation 0 0 0.09
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 5 5
+  wallHeight 0.5
+}
+Pedestrian {
+  translation -1.63 1.4 1.27
+}
+Table {
+  translation 1.7 0.01 -0.24
+  size 0.1 1.5 0.7
+}

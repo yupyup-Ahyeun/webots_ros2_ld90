@@ -233,7 +233,7 @@ local_costmap:
           obstacle_max_range: 2.5
           obstacle_min_range: 0.0
         scan_sub:
-          topic: /LD90/kinect_range/point_cloud
+          topic: /scan_sub
           max_obstacle_height: 2.0
           clearing: True
           marking: True

@@ -19,6 +19,9 @@ source install/local_setup.bash
 # 빈 map에서 실행
 ros2 launch webots_ros2_ld90 robot_launch.py
 
+# 장애물 조금 있는 map에서 실행
+ros2 launch webots_ros2_ld90 robot_launch.py world:=my_ld90_obs.wbt
+
 # 과제 map에서 실행
 ros2 launch webots_ros2_ld90 robot_launch.py world:=contest.wbt
 
