@@ -41,7 +41,7 @@ PROTO LD90 [
 
       Pose { # Sub Lidar Slot: Kinect
         translation 0 0 0.5
-        rotation 1 0 0 3.141592
+        rotation 1 0 0 0
         children [
           Kinect {
           }

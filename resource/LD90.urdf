@@ -14,7 +14,7 @@
             </ros>
         </device>
 
-        <device reference="Kinect" type="Rangefinder">
+        <device reference="kinect_range" type="RangeFinder">
             <ros>
                 <enabled>true</enabled>
                 <updateRate>5</updateRate>
@@ -24,7 +24,7 @@
             </ros>
         </device>
         
-        <device reference="Kinect" type="Camera">
+        <device reference="kinect_color" type="Camera">
             <ros>
                 <enabled>true</enabled>
                 <updateRate>5</updateRate>
