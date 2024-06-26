@@ -11,6 +11,7 @@ data_files.append(('share/' + package_name + '/protos/meshes', ['protos/meshes/L
 data_files.append(('share/' + package_name + '/protos/textures', ['protos/textures/sick_lms291_roughness.jpg']))
 data_files.append(('share/' + package_name + '/protos/textures', ['protos/textures/sick_lms291.png']))
 data_files.append(('share/' + package_name + '/worlds', ['worlds/my_ld90.wbt']))
+data_files.append(('share/' + package_name + '/worlds', ['worlds/my_ld90_obs.wbt']))
 data_files.append(('share/' + package_name + '/worlds', ['worlds/contest.wbt']))
 data_files.append(('share/' + package_name + '/worlds', ['worlds/contest_non_ped.wbt']))
 data_files.append(('share/' + package_name + '/worlds', ['worlds/contest_non_ped_non_manhole.wbt']))
