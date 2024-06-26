@@ -49,6 +49,16 @@ def generate_launch_description():
         arguments=['0', '0', '0', '0', '0', '0', 'base_link', 'wheel_drop_right'],
     )
 
+    # Range finder 
+    tf_kinect_range = Node(
+        package='tf2_ros',
+        executable='static_transform_publisher',
+        name='kinect_range_to_base_link',
+        output='screen',
+        arguments=['0', '0', '0', '0', '0', '0', 'base_link', 'kinect_range'],
+    )
+
+
     # ROS control spawners
     ros2_control_params = os.path.join(package_dir, 'resource', 'ros2control.yaml')
     controller_manager_timeout = ['--controller-manager-timeout', '50']
@@ -72,8 +82,7 @@ def generate_launch_description():
         ('/diffdrive_controller/cmd_vel_unstamped', '/cmd_vel'), 
         ('/diffdrive_controller/odom', '/odom'),
         ('/LD90/main_lidar', '/scan_main'),
-        ('/LD90/camera_realsense_depth_01', '/scan_01'),
-        ('/LD90/camera_realsense_depth_02', '/scan_02'),
+        ('/LD90/kinect_range', '/scan_sub'),
     ]      
     
     # Create a ROS node interacting with the simulated robot
@@ -108,6 +117,7 @@ def generate_launch_description():
         webots._supervisor,
         tf_wheel_drop_left,
         tf_wheel_drop_right,
+        tf_kinect_range,
         robot_driver,
         waiting_nodes,
         # The following action will kill all nodes once the Webots simulation has exited

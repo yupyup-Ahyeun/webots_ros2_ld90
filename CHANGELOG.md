@@ -48,5 +48,6 @@
 - refined_map_filtered.pgm 필터 부분 수정
 - 라이다 교체 결정: realsense >> Kinect
 - 테스트용 맵 my_ld90_obs.wbt 추가
+- robot_launch.py 수정: kinetic_range 노드 추가
 
 
