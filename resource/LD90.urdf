@@ -14,35 +14,25 @@
             </ros>
         </device>
 
-        <device reference="camera_realsense_depth_01" type="Lidar">
+        <device reference="Kinect" type="Rangefinder">
             <ros>
                 <enabled>true</enabled>
                 <updateRate>5</updateRate>
-                <topicName>/scan_01</topicName>
+                <topicName>/scan_sub</topicName>
                 <alwaysOn>true</alwaysOn>
-                <frameName>sub_lidar_01</frameName>
+                <frameName>Kinect_Rangefinder</frameName>
             </ros>
         </device>
-        <device reference="camera_realsense_depth_02" type="Lidar">
-            <ros>
-                <enabled>true</enabled>
-                <updateRate>5</updateRate>
-                <topicName>/scan_02</topicName>
-                <alwaysOn>true</alwaysOn>
-                <frameName>sub_lidar_02</frameName>
-            </ros>
-        </device>
-
-        <device reference="oakd_rgb_camera" type="Camera">
+        
+        <device reference="Kinect" type="Camera">
             <ros>
                 <enabled>true</enabled>
                 <updateRate>5</updateRate>
                 <topicName>/scan_camera</topicName>
                 <alwaysOn>true</alwaysOn>
-                <frameName>oakd_camera</frameName>
+                <frameName>Kinect_Camera</frameName>
             </ros>
         </device>
-
 
         <device reference="rear_sonar_1" type="DistanceSensor">
             <ros>
