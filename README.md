@@ -60,6 +60,7 @@ Use map)
 ros2 launch nav2_bringup bringup_launch.py params_file:=resource/nav2_params.yaml map:=resource/my_mapff.yaml
 ros2 launch nav2_bringup bringup_launch.py params_file:=resource/nav2_params.yaml map:=resource/my_mapff3.yaml
 ros2 launch nav2_bringup bringup_launch.py params_file:=resource/nav2_params.yaml map:=resource/my_mapff4.yaml
+ros2 launch nav2_bringup bringup_launch.py params_file:=resource/nav2_params.yaml map:=resource/my_mapff5.yaml
 ros2 launch nav2_bringup bringup_launch.py params_file:=resource/nav2_params.yaml map:=resource/refined_map.yaml
 ros2 launch nav2_bringup bringup_launch.py params_file:=resource/nav2_params.yaml map:=resource/refined_map_filtered.yaml
 ```
